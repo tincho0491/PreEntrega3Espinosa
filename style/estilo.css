@@ -154,6 +154,9 @@ footer p {
 
 
 /* Estilos MAIN */
+main {
+    background-color: #485D63;
+}
 .intro {
     grid-area: intro;
     background-image: url(/images/young-fitness-man-in-studio.jpg);
@@ -182,18 +185,22 @@ footer p {
 }
 
 /* Estilo a nuestros pilares */
-.moral {
-    grid-area: moral;
-    display: flex;
-    background-color: beige;
-}
 
 .pilar1 {
+    background-color: white;
+    box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.48);
     grid-area: pilar1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pilar2 {
     grid-area: pilar2;
+    box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .moralArticle {
@@ -203,23 +210,25 @@ footer p {
 }
 
 /* Estilo para sección de formulario */
-.ask {
-    grid-area: ask;
-    display: flex;
-    background-color: beige;
-}
 
 .askArticle {
     grid-area: askAr;
-    font-size: large;
+    font-size: 20px;
     line-height: 40px;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    width: 400px;
+    display: block;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+.askArticle h2 {
+    text-shadow: #485D63;
 }
 
 .askAside {
     grid-area: askAs;
+    width: 600px;
+    height: 250px;
     border: 1px solid black;
     border-radius: 4px;
     padding: 4px;
@@ -242,7 +251,7 @@ footer p {
 }
 
 .columna1 input {
-    font-size: medium;
+    font-size: 1rem;
     padding: 4px;
     border: 1px solid rgb(207, 98, 98);
 }
@@ -252,7 +261,7 @@ footer p {
     height: 150px;
     border: 1px solid rgb(207, 98, 98);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 2px;
     margin-left: 30px;
 }
