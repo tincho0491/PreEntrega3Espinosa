@@ -154,7 +154,6 @@ footer p {
 
 
 /* Estilos MAIN */
-
 .intro {
     grid-area: intro;
     background-image: url(/images/young-fitness-man-in-studio.jpg);
@@ -185,18 +184,16 @@ footer p {
 /* Estilo a nuestros pilares */
 .moral {
     grid-area: moral;
-    display: inline-flex;
+    display: flex;
     background-color: beige;
 }
 
 .pilar1 {
     grid-area: pilar1;
-    display: flex;
 }
 
 .pilar2 {
     grid-area: pilar2;
-    display: flex;
 }
 
 .moralArticle {
@@ -304,8 +301,8 @@ footer p {
         display: grid;
         grid-template-areas:
             "intro intro intro intro"
-            "moral moral moral moral"
-            "ask ask ask ask"
+            "pilar1 moralAr moralAr pilar2"
+            "askAr askAr askAs askAs"
         ;
     }
 
@@ -317,9 +314,8 @@ footer p {
 @media (min-width:700px) and (max-width:1023px) {
     .headerContainer {
         grid-template-areas:
-            "logo hello"
-            "logo nav"
-            "sesion sesion"
+            "logo hello sesion"
+            "logo nav nav"
         ;
     }
 
