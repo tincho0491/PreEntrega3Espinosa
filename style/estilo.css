@@ -1,0 +1,374 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+    /* border: 1px solid black; */
+
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+
+
+/* Estilos generales */
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.paddingTb {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.marginLr {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.marginTb {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+header {
+    background-color: #71B0BF;
+    height: 20vh;
+}
+
+/* Estilos para listas */
+
+.lists {
+    display: flex;
+    margin-inline-start: 50px;
+}
+
+.lists li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.lists a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+}
+
+.lists button {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background-color: #71B0BF;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: -25px;
+    cursor: pointer;
+}
+
+
+/* Estilos Header */
+@keyframes texto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.hello {
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: initial;
+}
+
+.hello {
+    grid-area: hello;
+    background: linear-gradient(to bottom, #485D63, #71B0BF);
+    margin: 0%;
+}
+
+.logo {
+    grid-area: logo;
+    background: linear-gradient(to bottom, #71B0BF, #485D63);
+}
+
+.navigation {
+    grid-area: nav;
+    background: linear-gradient(to bottom, #71B0BF, #485D63);
+    display: flex;
+    /* align-items: center; */
+    padding-top: 5px;
+}
+
+.sesion {
+    grid-area: sesion;
+    background: linear-gradient(to bottom, #71B0BF, #485D63);
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu ul {
+    display: none;
+    position: absolute;
+}
+
+.submenu:hover ul {
+    display: block;
+}
+
+
+
+/* FLEXBOX FOOTER */
+.footerBox {
+    background-color: rgba(107, 91, 64, 0.877);
+}
+
+footer div {
+    margin-top: 20px;
+}
+
+footer div a {
+    margin-inline: 50px;
+}
+
+footer p {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* Estilos MAIN */
+
+.intro {
+    grid-area: intro;
+    background-image: url(/images/young-fitness-man-in-studio.jpg);
+    background-size: 100%;
+    width: 99vw;
+    height: 80vh;
+    display: flex;
+}
+
+.intro div {
+    color: wheat;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro h2 {
+    font-size: 3rem;
+}
+
+.intro ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Estilo a nuestros pilares */
+.moral {
+    grid-area: moral;
+    display: inline-flex;
+    background-color: beige;
+}
+
+.pilar1 {
+    grid-area: pilar1;
+    display: flex;
+}
+
+.pilar2 {
+    grid-area: pilar2;
+    display: flex;
+}
+
+.moralArticle {
+    grid-area: moralAr;
+    line-height: 25px;
+    font-size: large;
+}
+
+/* Estilo para sección de formulario */
+.ask {
+    grid-area: ask;
+    display: flex;
+    background-color: beige;
+}
+
+.askArticle {
+    grid-area: askAr;
+    font-size: large;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.askAside {
+    grid-area: askAs;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 4px;
+    margin-left: -5px;
+}
+
+/* FORMULARIOS */
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.columna1 {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.columna1 input {
+    font-size: medium;
+    padding: 4px;
+    border: 1px solid rgb(207, 98, 98);
+}
+
+.columna2 {
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgb(207, 98, 98);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    padding: 2px;
+    margin-left: 30px;
+}
+
+/* Animación para formulario */
+
+.columna1 input:hover {
+    height: 320px;
+    width: 250px;
+    transition: all 3s;
+}
+
+/* Estilo para botones de formulario */
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones input {
+    background-color: rgba(50, 50, 50, .2);
+    border: 1px solid brown;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+/* ---------GRID------------ */
+
+/* VERSIÓN DE ESCRITORIO */
+
+
+    /* GRID AREA HEADER */
+    .headerContainer {
+        display: grid;
+        grid-template-areas:
+            "logo hello hello hello hello"
+            "logo nav nav nav sesion";
+    }
+
+    /* GRID AREA MAIN */
+    .mainContainer {
+        display: grid;
+        grid-template-areas:
+            "intro intro intro intro"
+            "moral moral moral moral"
+            "ask ask ask ask"
+        ;
+    }
+
+
+/* VERSIÓN TABLETA */
+/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1023 pixeles  ejecuto el siguiente codigo */
+
+
+@media (min-width:700px) and (max-width:1023px) {
+    .headerContainer {
+        grid-template-areas:
+            "logo hello"
+            "logo nav"
+            "sesion sesion"
+        ;
+    }
+
+    .mainContainer {
+        grid-template-areas:
+            "intro intro"
+            "pilar1 pilar2"
+            "moralAr moralAr"
+            "askAr askAr"
+            "askAs askAs";
+
+    }
+
+/* 
+    section img {
+        width: 300px;
+    } */
+}
+
+
+
+/* VISTA MOVIL */
+
+@media (max-width: 699) {
+    .mainContainer {
+        grid-template-areas:
+            "hello"
+            "sesion"
+            "nav";
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .encabezado div {
+        max-width: 90%;
+        /* El ancho del texto del encabeza siempre tendra el 90% de la pantalla */
+    }
+
+    section {
+        text-align: center;
+    }
+
+    section img {
+        width: 300px;
+    }
+}

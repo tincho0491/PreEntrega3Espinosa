@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Magym</title>
+    <!-- Links Logo Favicon y CSS-->
+    <link rel="shortcut icon" href="images/logo-Magym.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="headerContainer">
+        <h1 class="hello centered">¡Bienvenidos a Magym!</h1>
+        <div class="logo centered"><img src="images/logo-Magym-sf.png" alt="logo-Magym" width="100" height="100"></div>
+        <nav class="navigation">
+            <ul class="lists">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu"><a href="pages/sedes.html">Sedes</a>
+                    <ul>
+                        <li><a href="pages/clases-reservas.html">Clases|Reservas</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/novedades.html">Novedades</a></li>
+                <li><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="pages/tienda.html">Tienda</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="sesion">
+            <!-- Botones para Registrarse o Iniciar Sesión. Estos botones abren ventanas 'pop up' en cualquier página. Utilizados a la hora de hacer compras o reservar una clase. -->
+            <ul class="lists">
+                <!-- <li><input type="button" value="Entrar"></li> -->
+                <li><button>Entrar</button></li>
+                <li><button>Registrarse</button></li>
+                <!-- <li><input type="button" value="Registrarse"></li> -->
+            </ul>
+        </div>
+    </header>
+
+    <main class="mainContainer">
+        <section class="intro">
+            <!-- <img src="images/young-fitness-man-in-studio.jpg" alt="portada" width="1348"> -->
+            <div>
+                <h2>Inscripciones abiertas</h2>
+                <h3>Registrate y accedé a todos nuestros servicios y beneficios</h3>
+                <ul>
+                    <li>Tienda Online</li>
+                    <li>Reservas de clases</li>
+                    <li>Asesoramiento Nutricional</li>
+                    <li>Eventos Especiales</li>
+                </ul>
+                <h4>Descuentos por grupo familiar</h4>
+            </div>
+        </section>
+
+        <!-- Sección: Pilares de la Empresa -->
+
+        <section class="moral paddingTb">
+            
+            <aside class="pilar1 moralAside marginLr" data-aos="fade-right">
+                <img src="images/pilar.png" width="150px" height="340px" alt="">
+            </aside> 
+
+            <article class="moralArticle">
+                
+                <h2 class="centered">¿Por qué elegirnos?</h2>
+
+                <div class="paddingTb">
+                    <h3> Visión </h3>
+                    <p>
+                        Buscamos ser un gimnasio líder, atractivo, brindando una amplia variedad de actividades
+                        físicas para que todo aquel que quiera pueda acercarse a nosotros y encontrar aquello que
+                        busca. Queremos marcar la diferencia ofreciendo a nuestros miembros un servicio integral.
+                    </p>
+                </div>
+
+                <div class="paddingTb">
+                    <h3>Misión</h3>
+                    <p>
+                        Es nuestra prioridad ayudar a nuestros miembros a sostener una excelente condición física,
+                        generando habitos saludables a través del entrenamiento y alimentación.
+                    </p>
+                    <p>
+                        Buscamos mejorar la calidad de vida y estamos convencidos que el ejercicio y la nutrición
+                        forman parte del camino.
+                    </p>
+                </div>
+
+                <div class="paddingTb">
+                    <h3>Valores</h3>
+                    <p>
+                        El compromiso con nuestros miembros es uno de los pilares fundamentales. Es por ello que
+                        valoramos la eficacia en la búsqueda de lograr los objetivos propuestos por cada integrante
+                        en la comunidad de Magym
+                    </p>
+                </div>
+
+                <div>
+                    <a href="pages/sobre-nosotros.html#nuestroEquipo" class="centered">Conocé a nuestro equipo</a>
+                </div>
+            </article>
+
+            <aside class="pilar2 moralAside marginLr" data-aos="fade-left">
+                <img src="images/pilar.png" width="150px" height="340px" alt="">
+            </aside>
+
+        </section>
+
+        <section class="ask padding">
+            <article class="askArticle marginLr marginTb">
+                <h2>¡Unite a Nosotros!</h2>
+                <p>Te invitamos a sumarte a la comunidad de Magym donde tu salud nos interesa. Estamos para acompañarte
+                    y brindarte la mejor atención. Cambiá tu rutina, creá hábitos y ganá salud.
+                </p>
+                <p><a href="vacioPorAhora">Registrate:</a> y accedé a nuestra tienda o reservá tu clase</p>
+            </article>
+
+            <aside class="askAside marginTb">
+                <div class="centered">
+                    <h2>¿Dudas?¿Consultas?</h2>
+                    <h3>¡Contactanos!</h3>
+                </div>
+
+                <form class="form">
+                    <div class="fila">
+                        <div class="columna1">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido">
+                            <label for="correo">Correo Electrónico</label>
+                            <input type="email" id="correo">
+                        </div>
+                        <textarea class="columna2" cols="30" rows="10">Dejá tu mensaje</textarea>
+                    </div>
+                    <div class="fila botones">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </form>
+            </aside>
+        </section>
+    </main>
+
+
+    <footer class="footerBox">
+        <h2 class="centered">Canales de Comunicación</h2>
+        <div class="centered">
+            <ul class="lists">
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="images/facebook-logo.png" width="40" height="40" alt="Facebook">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="images/logo_instagram-sf.png" width="40" height="40" alt="Instagram">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.whatsapp.com" target="_blank">
+                        <img src="images/WhatsApp_logo-cuadrado-sf.png" width="40" height="40" alt="Whatsapp">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:contacto@magym.com.ar" target="_blank">
+                        <img src="images/logo_correo1-sf.png" width="40" height="40" alt="Correo Electrónico">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div>
+            <ul>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://www.whatsapp.com">Whatsapp</a></li>
+                <li><a href="mailto:contacto@magym.com.ar">E-mail</a></li>
+            </ul>
+        </div> -->
+
+        <p class="cajaFooter creador">Sitio web creado por Martin</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
