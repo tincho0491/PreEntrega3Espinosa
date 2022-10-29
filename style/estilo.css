@@ -185,22 +185,18 @@ main {
 }
 
 /* Estilo a nuestros pilares */
-
-.pilar1 {
+.pilars {
     background-color: white;
     box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.48);
-    grid-area: pilar1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.pilar1 {
+    grid-area: pilar1;
+}
 .pilar2 {
     grid-area: pilar2;
-    box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.48);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .moralArticle {
@@ -217,14 +213,10 @@ main {
     line-height: 40px;
     width: 400px;
     display: block;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-bottom: 50px;
     margin-right: 100px;
 }
-.askArticle h2 {
-    text-shadow: #485D63;
-}
-
 .askAside {
     grid-area: askAs;
     width: 600px;
@@ -320,7 +312,7 @@ main {
 /* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1023 pixeles  ejecuto el siguiente codigo */
 
 
-@media (min-width:700px) and (max-width:1023px) {
+@media (min-width:768px) and (max-width:1023px) {
     .headerContainer {
         grid-template-areas:
             "logo hello sesion"
@@ -335,45 +327,65 @@ main {
             "moralAr moralAr"
             "askAr askAr"
             "askAs askAs";
-
     }
 
-/* 
-    section img {
-        width: 300px;
-    } */
+    .sesion {
+        background: linear-gradient(to bottom, #485D63, #71B0BF);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .askArticle {
+        width: auto;
+        font-size: 20px;
+        line-height: 40px;
+        margin-left: 75px;
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+    .askAside {
+        margin-left: 75px;
+    }
 }
 
 
 
 /* VISTA MOVIL */
 
-@media (max-width: 699) {
+@media (max-width: 767px) {
+    .headerContainer {
+        grid-template-areas:
+            "logo hello"
+            "nav sesion"
+            ;
+    }
     .mainContainer {
         grid-template-areas:
-            "hello"
-            "sesion"
-            "nav";
+            "intro intro"
+            "pilar1 pilar2"
+            "moralAr moralAr"
+            "askAr askAr"
+            "askAs askAs";
     }
-
-    html {
-        font-size: 80%;
+    .intro {
+        background-repeat: no-repeat;
     }
-
-    nav {
-        position: static;
+    .pilars {
+        width: 100px;
+        margin: 0%;
     }
-
-    .encabezado div {
+    .moralArticle{
         max-width: 90%;
-        /* El ancho del texto del encabeza siempre tendra el 90% de la pantalla */
+        margin-left:30px ;
     }
-
-    section {
+    .askArticle {
         text-align: center;
+        margin-left: 5%;
+    }
+    .askAside{
+        max-width:90%;
     }
 
-    section img {
-        width: 300px;
-    }
+
 }
