@@ -42,36 +42,7 @@ header {
     height: 20vh;
 }
 
-/* Estilos para listas */
 
-.lists {
-    display: flex;
-    margin-inline-start: 50px;
-}
-
-.lists li {
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-.lists a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-}
-
-.lists button {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-    background-color: #71B0BF;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 5px;
-    margin-right: -25px;
-    cursor: pointer;
-}
 
 
 /* Estilos Header */
@@ -89,9 +60,7 @@ header {
     animation-name: texto;
     animation-duration: 3s;
     animation-iteration-count: initial;
-}
 
-.hello {
     grid-area: hello;
     background: linear-gradient(to bottom, #485D63, #71B0BF);
     margin: 0%;
@@ -105,31 +74,28 @@ header {
 .navigation {
     grid-area: nav;
     background: linear-gradient(to bottom, #71B0BF, #485D63);
-    display: flex;
-    /* align-items: center; */
     padding-top: 5px;
 }
 
-.sesion {
-    grid-area: sesion;
-    background: linear-gradient(to bottom, #71B0BF, #485D63);
-    display: flex;
-    /* align-items: center; */
-    justify-content: flex-end;
+/* Navbar Styles */
+
+.navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
 }
 
-.submenu {
-    position: relative;
+.navigation button {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    background-color: #71B0BF;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
-.submenu ul {
-    display: none;
-    position: absolute;
-}
-
-.submenu:hover ul {
-    display: block;
-}
 
 
 
@@ -294,7 +260,7 @@ main {
         display: grid;
         grid-template-areas:
             "logo hello hello hello hello"
-            "logo nav nav nav sesion";
+            "logo nav nav nav nav";
     }
 
     /* GRID AREA MAIN */
@@ -315,8 +281,8 @@ main {
 @media (min-width:768px) and (max-width:1023px) {
     .headerContainer {
         grid-template-areas:
-            "logo hello sesion"
-            "logo nav nav"
+            "logo hello"
+            "logo nav "
         ;
     }
 
@@ -357,7 +323,7 @@ main {
     .headerContainer {
         grid-template-areas:
             "logo hello"
-            "nav sesion"
+            "nav nav"
             ;
     }
     .mainContainer {
