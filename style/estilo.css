@@ -97,18 +97,25 @@ header {
 }
 
 
-
-
 /* FLEXBOX FOOTER */
-.footerBox {
+
+footer {
     background-color: rgba(107, 91, 64, 0.877);
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 footer div {
     margin-top: 20px;
 }
+footer ul {
+    display: flex;
+}
+footer li {
+    list-style-type: none;
+}
 
-footer div a {
+footer a {
     margin-inline: 50px;
 }
 
@@ -186,7 +193,7 @@ main {
 .askAside {
     grid-area: askAs;
     width: 600px;
-    height: 250px;
+    height: 320px;
     border: 1px solid black;
     border-radius: 4px;
     padding: 4px;
@@ -222,6 +229,7 @@ main {
     font-size: 1rem;
     padding: 2px;
     margin-left: 30px;
+    margin-top: 20px;
 }
 
 /* Animación para formulario */
@@ -238,6 +246,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5px;
 }
 
 .botones input {
@@ -294,24 +303,18 @@ main {
             "askAr askAr"
             "askAs askAs";
     }
-
-    .sesion {
-        background: linear-gradient(to bottom, #485D63, #71B0BF);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .moralArticle{
+        max-width: 90%;
+        margin-left:30px;
     }
 
     .askArticle {
-        width: auto;
-        font-size: 20px;
-        line-height: 40px;
-        margin-left: 75px;
-        margin-bottom: 50px;
-        margin-right: 50px;
+        width: 500px;
+        margin: 20px 50px 20px 150px;
+        text-align: center;
     }
     .askAside {
-        margin-left: 75px;
+        margin: 20px 50px 50px 100px;
     }
 }
 
@@ -339,18 +342,19 @@ main {
     }
     .pilars {
         width: 100px;
-        margin: 0%;
+        margin-left: 30%;
     }
     .moralArticle{
         max-width: 90%;
         margin-left:30px ;
     }
     .askArticle {
+        width: 500px;
+        margin: 20px 50px 20px 50px;
         text-align: center;
-        margin-left: 5%;
     }
-    .askAside{
-        max-width:90%;
+    .askAside {
+        margin: 20px 50px 50px 10px;
     }
 
 
