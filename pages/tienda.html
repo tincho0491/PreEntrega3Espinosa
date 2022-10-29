@@ -6,37 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- Links Logo Favicon y CSS-->
     <link rel="shortcut icon" href="../images/logo-Magym.png" type="image/x-icon">
     <link rel="stylesheet" href="../style/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="headerContainer">
         <h1 class="hello centered">¡Bienvenidos a Magym!</h1>
         <div class="logo centered"><img src="../images/logo-Magym-sf.png" alt="logo-Magym" width="100" height="100"></div>
-        <nav class="navigation centered">
-            <ul class="lists">
-                <li><a href="../index.html">Inicio</a></li>
-                <li class="submenu"><a href="sedes.html">Sedes</a>
-                    <ul>
-                        <li><a href="clases-reservas.html">Clases|Reservas</a></li>
+
+        <nav class="navigation navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="sedes.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Sedes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="sedes.html">Sedes</a></li>
+                                <li><a class="dropdown-item" href="clases-reservas.html">Clases|Reservas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                     </ul>
-                </li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+                    <span class="navbar-text">
+                        <nav class="navbar">
+                            <form class="container-fluid justify-content-start">
+                                <button class="btn btn-sm btn-outline-secondary me-2" type="button">Entrar</button>
+                                <button class="btn btn-sm btn-outline-secondary" type="button">Registrarse</button>
+                            </form>
+                        </nav>
+                    </span>
+                </div>
+            </div>
         </nav>
-        <div class="sesion centered">
-            <!-- Botones para Registrarse o Iniciar Sesión. Estos botones abren ventanas 'pop up' en cualquier página. Utilizados a la hora de hacer compras o reservar una clase. -->
-            <ul class="lists">
-                <li><input type="button" value="Entrar"></li>
-                <!-- <li><button>Entrar</button></li>  Version 2 -->
-                <li><input type="button" value="Registrarse"></li>
-            </ul>
-        </div>
     </header>
 
     <main class="centered">
