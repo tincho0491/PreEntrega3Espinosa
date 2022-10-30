@@ -368,8 +368,9 @@ main {
     padding-bottom: 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    margin-inline: 1rem;
 }
 .location div {
     margin-bottom: 2rem;
+    margin-left: 1rem;
 }
