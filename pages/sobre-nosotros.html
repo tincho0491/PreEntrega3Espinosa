@@ -19,7 +19,8 @@
 <body>
     <header class="headerContainer">
         <h1 class="hello centered">¡Bienvenidos a Magym!</h1>
-        <div class="logo centered"><img src="../images/logo-Magym-sf.png" alt="logo-Magym" width="100" height="100"></div>
+        <div class="logo centered"><img src="../images/logo-Magym-sf.png" alt="logo-Magym" width="100" height="100">
+        </div>
 
         <nav class="navigation navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
@@ -73,6 +74,14 @@
             </article>
 
             <article class="profesores">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                    <div class="card-body">
+                      <h5 class="card-title">Fede</h5>
+                      <p class="card-text">Profesor de Funcional</p>
+                    </div>
+                  </div>
                 <ul>
                     <div class="profesores1">
                         <li>
@@ -105,91 +114,90 @@
                 </ul>
             </article>
         </section>
+
         <article class="centered">
-            <div class="nuestraHistoria">
-                <h2>Nuestra Historia</h2>
-                <button>
-                    <img src="../images/flecha-abajo.png" alt="Expandir" class="flecha">
-                    <img src="../images/flecha-arriba.png" alt="Contraer" class="flecha">
-                </button> <!-- Botón para expandir y mostrar la historia -->
+
+            <h2 class="ourHistory">Nuestra Historia</h2>
+            
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img src="../images/flecha-abajo.png" alt="Expandir" class="flecha" width="40px" height="40px">
+                    <img src="../images/flecha-arriba.png" alt="Contraer" class="flecha" width="40px" height="40px">
+                </button>
+            </p>
+            
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <ul class="cronologia">
+                        <li>
+                            <div>
+                                <h3>2010: </h3>
+                                <p>Fundación de Magym. Abre su primer sede: Palermo.</p>
+
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <h3>2011: </h3>
+                                <p>Llegamos a 200 miembros y comenzamos con actividades de tracking.</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <h3>2013: </h3>
+                                <p>Abrimos las sedes Recolta y Almagro.</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <h3>2018: </h3>
+                                <p>Primer puesto en competiciones de Entrenamiento Funcional.</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <ul class="cronologia">
-                <li>
-                    <div>
-                        <h3>2010: </h3>
-                        <p>Fundación de Magym. Abre su primer sede: Palermo.</p>
-
-                    </div>
-
-                </li>
-                <li>
-                    <div>
-                        <h3>2011: </h3>
-                        <p>Llegamos a 200 miembros y comenzamos con actividades de tracking.</p>
-                    </div>
-
-                </li>
-                <li>
-                    <div>
-                        <h3>2013: </h3>
-                        <p>Abrimos las sedes Recolta y Almagro.</p>
-                    </div>
-
-                </li>
-                <li>
-                    <div>
-                        <h3>2018: </h3>
-                        <p>Primer puesto en competiciones de Entrenamiento Funcional.</p>
-                    </div>
-
-                </li>
-            </ul>
         </article>
 
     </main>
 
 
     <footer>
-        <h2 class="cajaFooter titulo">Canales de Comunicación</h2>
-        <div class="cajaFooter mediosDeComunicacion">
+        <h2 class="centered">Canales de Comunicación</h2>
+        <div class="centered">
             <ul>
                 <li>
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src="../images/facebook-logo-cuadrado.jpg" width="40" height="40" alt="Facebook">
+                        <img src="../images/facebook-logo.png" width="40" height="40" alt="Facebook">
                     </a>
                 </li>
 
                 <li>
                     <a href="https://www.instagram.com" target="_blank">
-                        <img src="../images/logo instagram.jpg" width="40" height="40" alt="Instagram">
+                        <img src="../images/logo_instagram-sf.png" width="40" height="40" alt="Instagram">
                     </a>
                 </li>
 
                 <li>
                     <a href="https://www.whatsapp.com" target="_blank">
-                        <img src="../images/WhatsApp_logo-cuadrado.jpg" width="40" height="40" alt="Whatsapp">
+                        <img src="../images/WhatsApp_logo-cuadrado-sf.png" width="40" height="40" alt="Whatsapp">
                     </a>
                 </li>
 
                 <li>
                     <a href="mailto:contacto@magym.com.ar" target="_blank">
-                        <img src="../images/logo correo1.jpg" width="40" height="40" alt="Correo Electrónico">
+                        <img src="../images/logo_correo1-sf.png" width="40" height="40" alt="Correo Electrónico">
                     </a>
                 </li>
             </ul>
         </div>
 
-        <!-- <div>
-            <ul>
-                <li><a href="https://www.facebook.com">Facebook</a></li>
-                <li><a href="https://www.instagram.com">Instagram</a></li>
-                <li><a href="https://www.whatsapp.com">Whatsapp</a></li>
-                <li><a href="mailto:contacto@magym.com.ar">E-mail</a></li>
-            </ul>
-        </div> -->
-
-        <p class="cajaFooter creador">Sitio web creado por Martin</p>
+        <p>Sitio web creado por Martin</p>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
