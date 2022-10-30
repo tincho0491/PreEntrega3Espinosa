@@ -52,15 +52,85 @@
                     <span class="navbar-text">
                         <nav class="navbar">
                             <form class="container-fluid justify-content-start">
-                                <button class="btn btn-sm btn-outline-secondary me-2" type="button">Entrar</button>
-                                <button class="btn btn-sm btn-outline-secondary" type="button">Registrarse</button>
+                                <!-- Button trigger modal iniciarSesion -->
+                                <button class="btn btn-sm btn-outline-secondary me-2" data-bs-toggle="modal"
+                                    data-bs-target="#iniciarSesion" type="button">Entrar</button>
+                                <!-- Button trigger modal registrarse -->
+                                <button class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal"
+                                    data-bs-target="#registrarse" type="button">Registrarse</button>
                             </form>
                         </nav>
                     </span>
                 </div>
             </div>
         </nav>
+
+
+        <!-- Modal iniciarSesion -->
+        <div class="modal fade" id="iniciarSesion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="correoElectrónico" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="correoElectrónico"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password1">
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary">Entrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Registrarse -->
+        <div class="modal fade" id="registrarse" tabindex="-1" aria-labelledby="Register" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="Register">Iniciar Sesión</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Newsletter</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
+
     
     <main>
         <h1 class="centered">Formulario de Contacto</h1>
