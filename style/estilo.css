@@ -3,10 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-
-    /* border: 1px solid black; */
-
 }
 
 /* html {
@@ -101,10 +97,7 @@ header {
 
 footer {
     background-color: rgba(107, 91, 64, 0.877);
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
-
 footer div {
     margin-top: 20px;
 }
@@ -114,14 +107,13 @@ footer ul {
 footer li {
     list-style-type: none;
 }
-
 footer a {
     margin-inline: 50px;
 }
-
 footer p {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 0;
 }
 
 
@@ -259,7 +251,7 @@ main {
     cursor: pointer;
 }
 
-/* ---------GRID------------ */
+/* ---------GRID index.html------------ */
 
 /* VERSIÓN DE ESCRITORIO */
 
@@ -319,7 +311,6 @@ main {
 }
 
 
-
 /* VISTA MOVIL */
 
 @media (max-width: 767px) {
@@ -356,6 +347,29 @@ main {
     .askAside {
         margin: 20px 50px 50px 10px;
     }
+}
 
 
+/*--------- Style for Sedes.html ---------- */
+
+.galery {
+    width: 90vw;
+}
+.galery img {
+    height: 100vh;;
+}
+
+.schedule table {
+    width: 70vw;
+    border: 2px solid saddlebrown;
+}
+.location {
+    margin-top: 20px;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.location div {
+    margin-bottom: 2rem;
 }
