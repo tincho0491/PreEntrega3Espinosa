@@ -374,3 +374,10 @@ main {
     margin-bottom: 2rem;
     margin-left: 1rem;
 }
+
+
+/* Styles for sobre-nosotros.html */
+
+.profesors {
+    display:flex;
+}
