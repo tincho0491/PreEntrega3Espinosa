@@ -19,8 +19,8 @@
 }
 
 .paddingTb {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .marginLr {
@@ -380,4 +380,15 @@ main {
 
 .profesors {
     display:flex;
+}
+
+/* Styles for clases-reservas.html */
+.reservation select {
+    width: 200px;
+    background-color: bisque;
+    margin-top: 10px;
+}
+
+.classDescription {
+    width: 560px;
 }
