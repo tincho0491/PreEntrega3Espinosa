@@ -497,3 +497,19 @@ main {
     margin-right: 50px;
     padding: 10px;
 }
+
+
+/* Styles for tienda.html */
+.products {
+    justify-content: center;
+}
+.products .card {
+    /* margin-left: 10px; */
+    margin: 10px;
+}
+.products .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
