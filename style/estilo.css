@@ -138,7 +138,7 @@ main {
 
 .intro {
     grid-area: intro;
-    background-image: url(/images/young-fitness-man-in-studio.jpg);
+    background-image: url(../images/young-fitness-man-in-studio.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     width: 99vw;
