@@ -103,29 +103,24 @@ header {
 
 /* FLEXBOX FOOTER */
 
-footer {
-    background-color: rgba(107, 91, 64, 0.877);
-}
-
-footer div {
-    margin-top: 20px;
+footer{
+    background-color: #6b5b40e0;
 }
 
 footer ul {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 footer li {
     list-style-type: none;
 }
 
-footer a {
-    margin-inline: 50px;
-}
-
 footer p {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-bottom: 0;
 }
 
@@ -245,9 +240,9 @@ main {
 /* Animación para formulario */
 
 .columna1 input:hover {
+    transition: all 3s;
     height: 320px;
     width: 250px;
-    transition: all 3s;
 }
 
 /* Estilo para botones de formulario */
@@ -354,6 +349,14 @@ main {
 
     .intro {
         background-repeat: no-repeat;
+        margin-bottom: 0;
+        height: auto;
+    }
+    .intro div h2 {
+        margin-top: 10px;
+    }
+    .intro div *{
+        font-size: 20px;
     }
 
     .pilars {
@@ -367,13 +370,25 @@ main {
     }
 
     .askArticle {
-        width: 500px;
+        width: auto;
         margin: 20px 50px 20px 50px;
         text-align: center;
     }
 
     .askAside {
+        width: auto;
+        height: auto;
+        font-size: 10px;
         margin: 20px 50px 50px 10px;
+    }
+    .form .fila {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .botones {
+        display: flex;
+        flex-direction: row;
     }
 
     /* sedes.html */
