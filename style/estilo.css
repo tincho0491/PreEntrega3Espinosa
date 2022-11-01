@@ -339,7 +339,7 @@ main {
     .headerContainer {
         grid-template-areas:
             "logo hello"
-            "nav nav"
+            "logo nav"
         ;
     }
 
@@ -452,4 +452,48 @@ main {
 
 .classDescription {
     width: 560px;
+}
+
+
+
+/* ESTILOS HTML NOVEDADES */
+
+
+
+/* CAJAS Padre */
+.newsArticle {
+    padding: 25px;
+    border-bottom: 2px dashed black;
+}
+.newsArticle h2 {
+    margin-left: 20px;
+}
+
+/* ARTICULOS */
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.news img {
+    width: 150px;
+    height: 200px;
+}
+
+
+.atrasAdelante {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.atrasAdelante input {
+    background-color: #e76c6c;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
 }
