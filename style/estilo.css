@@ -438,6 +438,11 @@ main {
     background-color: #4291a7;
     border: 2px solid black;
 }
+.ourHistory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .ourHistory button {
     background-color: #485D63;
 }
@@ -516,11 +521,13 @@ main {
 
 /* Styles for tienda.html */
 .products {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 .products .card {
     /* margin-left: 10px; */
-    margin: 10px;
+    margin: 20px;
 }
 .products .card-body {
     display: flex;
