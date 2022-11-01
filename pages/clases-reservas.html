@@ -132,40 +132,14 @@
     </header>
 
 
-    <main>
-        <div class="centered">
-            <h1>Clases|Reservas</h1>
+    <main class="mainClases">
+        <div class="centered paddingTb">
+            <h2>Clases|Reservas</h2>
         </div>
-        <section class="d-flex paddingTb">
+        <section class="row paddingTb marginLr">
 
-            <div class="reservation marginLr">
-
-                <h2>Reservá tu clase</h2>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Sede</option>
-                    <option value="1">Palermo</option>
-                    <option value="2">Almagro</option>
-                    <option value="3">Recoleta</option>
-                </select>
-
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Clase</option>
-                    <option value="1">Funcional</option>
-                    <option value="2">Musculación</option>
-                    <option value="3">Spinning</option>
-                </select>
-
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Horario</option>
-                    <option value="1">11:00</option>
-                    <option value="2">12:00</option>
-                    <option value="3">13:00</option>
-                </select>
-
-            </div>
-
-            <div class="classDescription">
-                <h2 class="">Descripción de Nuestras Clases</h2>
+            <div class="classDescription col-xl-9 col-md-12 col-sm-12">
+                <h3 class="">Descripción de Nuestras Clases</h3>
 
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -187,29 +161,29 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="funcional-tab-pane" role="tabpanel"
                         aria-labelledby="funcional-tab" tabindex="0">
-                        <p class="">
+                        <p>
                             El entrenamiento funcional se basa en realizar ejercicios que se adaptan a los movimientos
                             naturales del cuerpo humano para trabajar de forma global músculos y articulaciones.
                             Objetivos: aumentar la masa muscular, quemar grasas y mejorar el equilibrio, la movilidad y
                             la flexibilidad, coordinación. Mejora la capacidad cardiovascular.
                         </p>
                         <!-- Video explicativo-->
-                        <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/Qg7YgqxeRhM"
+                        <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/Qg7YgqxeRhM"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                     <div class="tab-pane fade" id="musculacion-tab-pane" role="tabpanel"
                         aria-labelledby="musculacion-tab" tabindex="0">
-                        <p class="">
+                        <p>
                             Es una actividad física consistente en la realización de un programa de entrenamiento con pesas en un gimnasio con la intención de desarrollar y controlar la musculatura, por medio de diversos tipos de ejercicios de fuerza, orientados a generar masa muscular.
                         </p>
                         <!-- Video explicativo-->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IsJ2w2JsN2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/IsJ2w2JsN2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="tab-pane fade" id="spinning-tab-pane" role="tabpanel" aria-labelledby="spinning-tab"
                         tabindex="0">
-                        <p class="">
+                        <p>
                             El ciclo indoor o spinning es un ejercicio aeróbico, que se ha convertido en una de las
                             actividades físicas más demandadas en los gimnasios. Según los últimos estudios publicados,
                             recomiendan este ejercicio físico a deportistas de alto rendimiento, debido a las altas
@@ -217,13 +191,36 @@
                             para aquellos sujetos poco entrenados o con una condición física baja.
                         </p>
                         <!-- Video explicativo-->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HDH0-honq4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="container-fluid" width="560" height="315" src="https://www.youtube.com/embed/HDH0-honq4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab"
                         tabindex="0">...</div>
                 </div>
+            </div>
 
+            <div class="reservation col-xl-3 col-md-12 col-sm-12">
 
+                <h3>Reservá tu clase</h3>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Sede</option>
+                    <option value="1">Palermo</option>
+                    <option value="2">Almagro</option>
+                    <option value="3">Recoleta</option>
+                </select>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Clase</option>
+                    <option value="1">Funcional</option>
+                    <option value="2">Musculación</option>
+                    <option value="3">Spinning</option>
+                </select>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Horario</option>
+                    <option value="1">11:00</option>
+                    <option value="2">12:00</option>
+                    <option value="3">13:00</option>
+                </select>
 
             </div>
 

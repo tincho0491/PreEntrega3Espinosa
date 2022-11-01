@@ -33,6 +33,14 @@
     margin-bottom: 40px;
 }
 
+.ml {
+    margin-left: 40px;
+}
+
+.mr {
+    margin-right: 40px;
+}
+
 header {
     background-color: #71B0BF;
     height: 20vh;
@@ -98,18 +106,23 @@ header {
 footer {
     background-color: rgba(107, 91, 64, 0.877);
 }
+
 footer div {
     margin-top: 20px;
 }
+
 footer ul {
     display: flex;
 }
+
 footer li {
     list-style-type: none;
 }
+
 footer a {
     margin-inline: 50px;
 }
+
 footer p {
     display: flex;
     justify-content: flex-end;
@@ -122,10 +135,12 @@ footer p {
 main {
     background-color: #485D63;
 }
+
 .intro {
     grid-area: intro;
     background-image: url(/images/young-fitness-man-in-studio.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
     width: 99vw;
     height: 80vh;
     display: flex;
@@ -152,14 +167,16 @@ main {
 /* Estilo a nuestros pilares */
 .pilars {
     background-color: white;
-    box-shadow: 0px 0px 8px 7px rgba(0,0,0,0.48);
+    box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.48);
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .pilar1 {
     grid-area: pilar1;
 }
+
 .pilar2 {
     grid-area: pilar2;
 }
@@ -178,10 +195,11 @@ main {
     line-height: 40px;
     width: 400px;
     display: block;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-bottom: 50px;
     margin-right: 100px;
 }
+
 .askAside {
     grid-area: askAs;
     width: 600px;
@@ -256,30 +274,30 @@ main {
 /* VERSIÓN DE ESCRITORIO */
 
 
-    /* GRID AREA HEADER */
-    .headerContainer {
-        display: grid;
-        grid-template-areas:
-            "logo hello hello hello hello"
-            "logo nav nav nav nav";
-    }
+/* GRID AREA HEADER */
+.headerContainer {
+    display: grid;
+    grid-template-areas:
+        "logo hello hello hello hello"
+        "logo nav nav nav nav";
+}
 
-    /* GRID AREA MAIN */
-    .mainContainer {
-        display: grid;
-        grid-template-areas:
-            "intro intro intro intro"
-            "pilar1 moralAr moralAr pilar2"
-            "askAr askAr askAs askAs"
-        ;
-    }
+/* GRID AREA MAIN */
+.mainContainer {
+    display: grid;
+    grid-template-areas:
+        "intro intro intro intro"
+        "pilar1 moralAr moralAr pilar2"
+        "askAr askAr askAs askAs"
+    ;
+}
 
 
 /* VERSIÓN TABLETA */
 /* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1023 pixeles  ejecuto el siguiente codigo */
 
 
-@media (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) and (max-width:1199px) {
     .headerContainer {
         grid-template-areas:
             "logo hello"
@@ -295,9 +313,10 @@ main {
             "askAr askAr"
             "askAs askAs";
     }
-    .moralArticle{
+
+    .moralArticle {
         max-width: 90%;
-        margin-left:30px;
+        margin-left: 30px;
     }
 
     .askArticle {
@@ -305,6 +324,7 @@ main {
         margin: 20px 50px 20px 150px;
         text-align: center;
     }
+
     .askAside {
         margin: 20px 50px 50px 100px;
     }
@@ -320,8 +340,9 @@ main {
         grid-template-areas:
             "logo hello"
             "nav nav"
-            ;
+        ;
     }
+
     .mainContainer {
         grid-template-areas:
             "intro intro"
@@ -330,22 +351,27 @@ main {
             "askAr askAr"
             "askAs askAs";
     }
+
     .intro {
         background-repeat: no-repeat;
     }
+
     .pilars {
         width: 100px;
         margin-left: 30%;
     }
-    .moralArticle{
+
+    .moralArticle {
         max-width: 90%;
-        margin-left:30px ;
+        margin-left: 30px;
     }
+
     .askArticle {
         width: 500px;
         margin: 20px 50px 20px 50px;
         text-align: center;
     }
+
     .askAside {
         margin: 20px 50px 50px 10px;
     }
@@ -363,6 +389,7 @@ main {
 .galery {
     width: 80%;
 }
+
 .galery img {
     height: 90vh;
 }
@@ -371,6 +398,7 @@ main {
     width: 70vw;
     border: 2px solid saddlebrown;
 }
+
 .location {
     margin-top: 20px;
     padding-bottom: 2rem;
@@ -378,6 +406,7 @@ main {
     align-items: center;
     margin-inline: 1rem;
 }
+
 .location div {
     margin-top: 20px;
     margin-bottom: 2rem;
@@ -385,12 +414,36 @@ main {
 
 
 /* Styles for sobre-nosotros.html */
-
-.profesors {
-    display:flex;
+.profesors .card {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.cronology .card {
+    background-color: #4291a7;
+    border: 2px solid black;
+}
+.ourHistory button {
+    background-color: #485D63;
+}
+.ourTeam {
+    font-size: 20px;
+    text-align: center;
 }
 
+
 /* Styles for clases-reservas.html */
+.mainClases {
+    background-image: url(../images/chica-entrenando.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white
+}
+
+.mainClases button {
+    color: white;
+}
+
 .reservation select {
     width: 200px;
     background-color: bisque;

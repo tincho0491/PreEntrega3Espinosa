@@ -134,79 +134,28 @@
 
 
     <main>
-        <h1 class="centered">Sobre Nosotros</h1>
-        <section>
-            <div class="ourTeam centered">
-                <h2> Nuestro Equipo </h2>
-                <p> El equipo de Magym está conformado por un grupo de profesionales altamente capacitados con una
-                    trayectoria indiscutible en el cuidado de la salud.
-                </p>
-            </div>
+        <h2 class="centered pt-4">Sobre Nosotros</h2>
 
-            <div class="profesors">
+        <article class="ourHistory mt-3">
+            <div class="d-flex justify-content-center mb-4">
+                <h3 class="mr">Nuestra Historia</h3>
 
-                <div class="card col-xl-4 col-lg-6 col-sm-12" style="width: 12rem;">
-                    <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
-                    <div class="card-body">
-                        <h5 class="card-title">Fede</h5>
-                        <p class="card-text">Profesor de Funcional</p>
-                    </div>
-                </div>
-                <div class="card col-xl-4 col-lg-6 col-sm-12" style="width: 12rem;">
-                    <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
-                    <div class="card-body">
-                        <h5 class="card-title">María</h5>
-                        <p class="card-text">Profesora de Spinning</p>
-                    </div>
-                </div>
-                <div class="card col-xl-4 col-lg-6 col-sm-12" style="width: 12rem;">
-                    <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
-                    <div class="card-body">
-                        <h5 class="card-title">Juan</h5>
-                        <p class="card-text">Profesor de Musculación</p>
-                    </div>
-                </div>
-
-                <div class="card col-xl-4 col-lg-6 col-sm-12" style="width: 12rem;">
-                    <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
-                    <div class="card-body">
-                        <h5 class="card-title">Marcos</h5>
-                        <p class="card-text">Profesor de Funcional</p>
-                    </div>
-                </div>
-                <div class="card col-xl-4 col-lg-6 col-sm-12" style="width: 12rem;">
-                    <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
-                    <div class="card-body">
-                        <h5 class="card-title">Juli</h5>
-                        <p class="card-text">Profesora de Spinning</p>
-                    </div>
-                </div>
-                <div class="card col-xl-4 col-lg-6 col-sm-12" style="width: 12rem;">
-                    <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
-                    <div class="card-body">
-                        <h5 class="card-title">Santi</h5>
-                        <p class="card-text">Profesor de Musculación</p>
-                    </div>
-                </div>
+                <span>
+                    <button class="collapse" id="collapseExample" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <img src="../images/flecha-arriba.png" alt="Contraer" class="flecha" width="40px" height="40px">
+                    </button>
+                    <button class="collapse show" id="collapseExample" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                        <img src="../images/flecha-abajo.png" alt="Expandir" class="flecha" width="40px" height="40px">
+                    </button>
+                </span>
 
             </div>
-        </section>
 
-        <article class="centered mt-5">
-
-            <h2 class="ourHistory">Nuestra Historia</h2>
-
-            <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    <img src="../images/flecha-abajo.png" alt="Expandir" class="flecha" width="40px" height="40px">
-                    <img src="../images/flecha-arriba.png" alt="Contraer" class="flecha" width="40px" height="40px">
-                </button>
-            </p>
-
-            <div class="collapse" id="collapseExample">
+            <div class="cronology collapse mt-1 mb-4" id="collapseExample">
                 <div class="card card-body">
-                    <ul class="cronologia">
+                    <ul>
                         <li>
                             <div>
                                 <h3>2010: </h3>
@@ -241,8 +190,87 @@
             </div>
         </article>
 
-    </main>
+        <section>
+            <div class="ourTeam centered">
+                <h3> Nuestro Equipo </h3>
+                <p class="marginLr"> El equipo de Magym está conformado por un grupo de profesionales altamente capacitados con una
+                    trayectoria indiscutible en el cuidado de la salud.
+                </p>
+            </div>
 
+            <div class="profesors">
+
+                <div class="row justify-content-around marginLr">
+
+                    <div class="card col-xl-3 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">Fede</h5>
+                            <p class="card-text">Profesor de Funcional</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-xl-3 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">Marcos</h5>
+                            <p class="card-text">Profesor de Funcional</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-xl-3 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">María</h5>
+                            <p class="card-text">Profesora de Spinning</p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-3 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">Juan</h5>
+                            <p class="card-text">Profesor de Musculación</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row justify-content-around marginLr">
+                    <div class="card col-xl-4 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">Santi</h5>
+                            <p class="card-text">Profesor de Musculación</p>
+                        </div>
+                    </div>
+                    <div class="card col-xl-4 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">Leandro</h5>
+                            <p class="card-text">Profesor de Musculación</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-xl-4 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">Marina</h5>
+                            <p class="card-text">Profesora de Gap</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-xl-4 col-md-6 col-sm-12 mb-5" style="width: 12rem;">
+                        <img src="../images/imagen-profe.png" class="card-img-top" alt="imagen de un profesor">
+                        <div class="card-body">
+                            <h5 class="card-title">Juli</h5>
+                            <p class="card-text">Profesora de Spinning</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <h2 class="centered">Canales de Comunicación</h2>
