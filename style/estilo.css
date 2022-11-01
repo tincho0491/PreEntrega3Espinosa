@@ -73,12 +73,16 @@ header {
 .logo {
     grid-area: logo;
     background: linear-gradient(to bottom, #71B0BF, #485D63);
+    z-index: 1;
+    opacity: 95%;
 }
 
 .navigation {
     grid-area: nav;
     background: linear-gradient(to bottom, #71B0BF, #485D63);
     padding-top: 5px;
+    z-index: 1;
+    opacity: 95%;
 }
 
 /* Navbar Styles */
@@ -528,7 +532,6 @@ main {
     margin-right: 100px;
 }
 .products .card {
-    /* margin-left: 10px; */
     margin: 20px;
 }
 .products .card-body {
