@@ -241,6 +241,7 @@ main {
     margin-top: 20px;
 }
 
+
 /* Animación para formulario */
 
 .columna1 input:hover {
@@ -385,6 +386,7 @@ main {
         font-size: 10px;
         margin: 20px 50px 50px 10px;
     }
+
     .form .fila {
         display: flex;
         flex-direction: column;
@@ -397,9 +399,9 @@ main {
 
     /* sedes.html */
     .schedule {
-        font-size: 10px;
+        font-size: 8px;
     }
-
+    
 }
 
 
@@ -410,7 +412,7 @@ main {
 }
 
 .galery img {
-    height: 90vh;
+    height: 50%;
 }
 
 .schedule table {
