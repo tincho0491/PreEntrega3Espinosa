@@ -170,10 +170,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 200px;
+    height: 380px;
 }
 
 .pilar1 {
-    grid-area: pilar1;
+    grid-area: pilar1;    
 }
 
 .pilar2 {
@@ -187,6 +189,10 @@ main {
 }
 
 /* Estilo para sección de formulario */
+.ask {
+    display: flex;
+    justify-content: space-between;
+}
 
 .askArticle {
     grid-area: askAr;
@@ -320,8 +326,8 @@ main {
     }
 
     .askArticle {
-        width: 500px;
-        margin: 20px 50px 20px 150px;
+        width: 90vw;
+        margin: 20px 50px 20px 50px;
         text-align: center;
     }
 
@@ -398,8 +404,16 @@ main {
     }
 
     /* sedes.html */
+    .galery img {
+        width: 100vh;
+        height: 60vh;
+    }
     .schedule {
         font-size: 8px;
+    }
+    .schedule *{
+        margin: 0;
+        padding: 0;
     }
     
 }
@@ -408,11 +422,11 @@ main {
 /*--------- Style for Sedes.html ---------- */
 
 .galery {
-    width: 80%;
+    width: 60vw;
 }
 
 .galery img {
-    height: 50%;
+    height: 30rem;
 }
 
 .schedule table {
@@ -432,6 +446,8 @@ main {
     margin-top: 20px;
     margin-bottom: 2rem;
 }
+
+
 
 
 /* Styles for sobre-nosotros.html */
@@ -484,15 +500,10 @@ main {
 
 /* ESTILOS HTML NOVEDADES */
 
-
-
 /* CAJAS Padre */
 .newsArticle {
-    padding: 25px;
+    padding: 3rem;
     border-bottom: 2px dashed black;
-}
-.newsArticle h2 {
-    margin-left: 20px;
 }
 
 /* ARTICULOS */
@@ -501,17 +512,13 @@ main {
     align-items: center;
     justify-content: center;
 }
-.news img {
-    width: 150px;
-    height: 200px;
-}
 
 
 .atrasAdelante {
     text-align: center;
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 2rem;
 }
 
 .atrasAdelante input {
@@ -519,8 +526,8 @@ main {
     border: 2px solid black;
     font-weight: bold;
     font-size: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding: 10px;
 }
 
