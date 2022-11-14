@@ -234,13 +234,13 @@ main {
 .columna1 input {
     font-size: 1rem;
     padding: 4px;
-    border: 1px solid rgb(207, 98, 98);
+    border: 1px solid #cf6262;
 }
 
 .columna2 {
     width: 300px;
     height: 150px;
-    border: 1px solid rgb(207, 98, 98);
+    border: 1px solid #cf6262;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1rem;
     padding: 2px;
@@ -267,7 +267,7 @@ main {
 }
 
 .botones input {
-    background-color: rgba(50, 50, 50, .2);
+    background-color: #32323233;
     border: 1px solid brown;
     font-weight: bold;
     font-size: 1rem;
