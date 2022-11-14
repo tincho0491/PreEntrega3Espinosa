@@ -133,6 +133,7 @@ footer p {
 /* Estilos MAIN */
 main {
     background-color: #485D63;
+    justify-content: center;
 }
 
 .intro {
@@ -200,9 +201,9 @@ main {
     line-height: 40px;
     width: 400px;
     display: block;
-    margin-left: 100px;
+    /* margin-left: 100px;
     margin-bottom: 50px;
-    margin-right: 100px;
+    margin-right: 100px; */
 }
 
 .askAside {
@@ -280,46 +281,12 @@ main {
 /* VERSIÓN DE ESCRITORIO */
 
 
-/* GRID AREA HEADER */
-.headerContainer {
-    display: grid;
-    grid-template-areas:
-        "logo hello hello hello hello"
-        "logo nav nav nav nav";
-}
-
-/* GRID AREA MAIN */
-.mainContainer {
-    display: grid;
-    grid-template-areas:
-        "intro intro intro intro"
-        "pilar1 moralAr moralAr pilar2"
-        "askAr askAr askAs askAs"
-    ;
-}
-
 
 /* VERSIÓN TABLETA */
 /* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1023 pixeles  ejecuto el siguiente codigo */
 
 
 @media (min-width:768px) and (max-width:1199px) {
-    .headerContainer {
-        grid-template-areas:
-            "logo hello"
-            "logo nav "
-        ;
-    }
-
-    .mainContainer {
-        grid-template-areas:
-            "intro intro"
-            "pilar1 pilar2"
-            "moralAr moralAr"
-            "askAr askAr"
-            "askAs askAs";
-    }
-
     .moralArticle {
         max-width: 90%;
         margin-left: 30px;
@@ -340,24 +307,6 @@ main {
 /* VISTA MOVIL */
 
 @media (max-width: 767px) {
-
-    /* index.html */
-    .headerContainer {
-        grid-template-areas:
-            "logo hello"
-            "logo nav"
-        ;
-    }
-
-    .mainContainer {
-        grid-template-areas:
-            "intro intro"
-            "pilar1 pilar2"
-            "moralAr moralAr"
-            "askAr askAr"
-            "askAs askAs";
-    }
-
     .intro {
         background-repeat: no-repeat;
         margin-bottom: 0;
