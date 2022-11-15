@@ -1,0 +1,152 @@
+/* ---------GRID index.html------------ */
+
+/* VERSIÓN DE ESCRITORIO */
+
+/* GRID AREA HEADER */
+
+.headerContainer {
+    display: grid;
+    grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
+}
+
+/* GRID AREA MAIN */
+
+.mainContainer {
+    display: grid;
+    grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
+}
+
+/* VERSIÓN TABLETA */
+/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1023 pixeles  ejecuto el siguiente codigo */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .headerContainer {
+        grid-template-areas: "logo hello" "logo nav ";
+    }
+
+    .mainContainer {
+        grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
+    }
+
+    .moralArticle {
+        max-width: auto;
+        margin-left: 30px;
+    }
+
+    .pilars {
+        margin-left: 30%;
+    }
+
+    .ask {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .askArticle {
+        width: 90vw;
+        margin: 20px 50px 20px 50px;
+        text-align: center;
+    }
+
+    .askAside {
+        margin: 20px 50px 50px 100px;
+    }
+}
+
+/* VISTA MOVIL */
+
+@media (max-width: 767px) {
+    /* index.html */
+
+    .headerContainer {
+        grid-template-areas: "logo hello" "logo nav";
+    }
+
+    .mainContainer {
+        grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
+    }
+
+    .intro {
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        height: auto;
+
+        div {
+            h2 {
+                margin-top: 10px;
+            }
+
+            * {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .pilars {
+        width: 100px;
+        height: 240px;
+        margin-left: 30%;
+
+        img {
+            height: 200px;
+        }
+    }
+
+    .moralArticle {
+        width: auto;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    .ask {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .askArticle {
+        width: auto;
+        margin: 20px 50px 20px 50px;
+        text-align: center;
+    }
+
+    .askAside {
+        width: auto;
+        height: auto;
+        font-size: 10px;
+        margin: 20px 50px 50px 10px;
+    }
+
+    .form .fila {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        textarea {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* sedes.html */
+    .filiaries {
+        height: 300px;
+    }
+
+    .schedule {
+        font-size: 8px;
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
