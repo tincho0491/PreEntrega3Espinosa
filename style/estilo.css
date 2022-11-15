@@ -1,6 +1,6 @@
 @charset "UTF-8";
 header {
-  background-color: #71B0BF;
+  background-color: #474E68;
   height: 20vh;
 }
 
@@ -91,7 +91,7 @@ footer p {
   align-items: center;
 }
 
-.rowCentered, .products, .atrasAdelante, .newsArticle div, .botones {
+.rowCentered, .products, .atrasAdelante, .newsArticle div, .askAside .botones {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -216,56 +216,57 @@ main {
 .ask article a:visited {
   color: #93d3df;
 }
-.ask aside {
+
+/* FORMULARIOS */
+.askAside {
   width: 600px;
-  height: 320px;
+  height: auto;
   border: 2px solid black;
   border-radius: 4px;
   padding: 4px;
+  /* Estilo para botones de formulario */
 }
-
-/* FORMULARIOS */
-.fila {
+.askAside div {
+  margin-bottom: 0.5rem;
+}
+.askAside .fila {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-.fila .columna1 {
+.askAside .fila .columna1 {
   width: 250px;
-  height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.fila .columna1 input {
+.askAside .fila .columna1 input {
   font-size: 1rem;
-  padding: 4px;
+  padding: 1px;
   border: 2px solid #350149;
   /* Animación para formulario */
 }
-.fila .columna1 input:hover {
+.askAside .fila .columna1 input:hover {
   transition: all 3s;
-  height: 420px;
-  width: 250px;
+  height: 40px;
 }
-.fila .columna2 {
+.askAside .fila .columna2 {
   width: 300px;
   height: 150px;
   border: 2px solid #350149;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
   padding: 2px;
-  margin-left: 30px;
-  margin-top: 20px;
+  /*margin left*/
+  margin-left: 2rem;
 }
-
-/* Estilo para botones de formulario */
-.botones {
+.askAside .botones {
   align-items: center;
-  margin-top: 5px;
+  margin-top: 1rem;
 }
-.botones input {
+.askAside .botones input {
   background-color: rgba(50, 50, 50, 0.2);
-  border: 2px solid #350149;
+  border: 2px solid #2b023b;
   font-weight: bold;
   font-size: 1rem;
   margin: 10px;
@@ -479,21 +480,21 @@ main {
     margin: 20px 50px 20px 50px;
     text-align: center;
   }
-  .ask aside {
+  .askAside {
     width: auto;
     height: auto;
     font-size: 10px;
   }
-  .form .fila {
+  .askAside .form .fila {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .form .fila textarea {
+  .askAside .form .fila textarea {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
-  .botones {
+  .askAside .botones {
     display: flex;
     flex-direction: row;
   }

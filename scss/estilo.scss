@@ -80,76 +80,80 @@ main {
         display: block;
         @include linkVisited;
     }
-
-    aside {
-        width: 600px;
-        height: 320px;
-        @include border-color(black);
-        border-radius: 4px;
-        padding: 4px;
-    }
 }
+
 
 /* FORMULARIOS */
 
-.fila {
-    display: flex;
-    flex-direction: row;
-    
-    .columna1 {
-        width: 250px;
-        height: 150px;
+.askAside {
+    width: 600px;
+    height: auto;
+    @include border-color(black);
+    border-radius: 4px;
+    padding: 4px;
+
+    div {
+        @include margins(b, 0.5rem);
+    }
+
+    .fila {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
     
-        input {
-            font-size: 1rem;
-            padding: 4px;
-            @include border-color(#350149);
+        .columna1 {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
     
-            /* Animación para formulario */
-            &:hover {
-                transition: all 3s;
-                height: 420px;
-                width: 250px;
+            input {
+                font-size: 1rem;
+                padding: 1px;
+                @include border-color(#350149);
+    
+                /* Animación para formulario */
+                &:hover {
+                    transition: all 3s;
+                    height: 40px;
+                }
             }
+        }
+    
+        .columna2 {
+            width: 300px;
+            height: 150px;
+            @include border-color(#350149);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1rem;
+            padding: 2px;
+    
+            /*margin left*/
+            @include margins(l, 2rem);
         }
     }
     
-    .columna2 {
-        width: 300px;
-        height: 150px;
-        @include border-color(#350149);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 1rem;
-        padding: 2px;
-        margin-left: 30px;
-        margin-top: 20px;
+    
+    /* Estilo para botones de formulario */
+    
+    .botones {
+        @extend .rowCentered;
+        align-items: center;
+        @include margins(t, 1rem);
+    
+        input {
+            background-color: rgba(50, 50, 50, 0.2);
+            @include border-color(#2b023b);
+            font-weight: bold;
+            font-size: 1rem;
+            @include margins (all,10px);
+            padding: 4px;
+            cursor: pointer;
+        }
     }
     
+    
 }
-
-
-/* Estilo para botones de formulario */
-
-.botones {
-    @extend .rowCentered;
-    align-items: center;
-    margin-top: 5px;
-
-    input {
-        background-color: rgba(50, 50, 50, 0.2);
-        @include border-color(#350149);
-        font-weight: bold;
-        font-size: 1rem;
-        margin: 10px;
-        padding: 4px;
-        cursor: pointer;
-    }
-}
-
-
 
 /*--------- Style for Sedes.html ---------- */
 
@@ -263,8 +267,7 @@ main {
         border: 2px solid black;
         font-weight: bold;
         font-size: 100%;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        @include margins(lr, 2rem);
         padding: 10px;
     }
 }
@@ -350,9 +353,9 @@ main {
         }
     }
 
-    
 
-    
+
+
 }
 
 /* VISTA MOVIL */
@@ -412,15 +415,13 @@ main {
             text-align: center;
         }
 
-        aside {
-            width: auto;
-            height: auto;
-            font-size: 10px;
-            // margin: 20px 50px 50px 10px;
-        }
     }
 
-
+    .askAside {
+        width: auto;
+        height: auto;
+        font-size: 10px;
+    
     .form .fila {
         display: flex;
         flex-direction: column;
@@ -436,6 +437,7 @@ main {
         display: flex;
         flex-direction: row;
     }
+}
 
     /* sedes.html */
     .filiaries {
