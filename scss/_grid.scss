@@ -17,11 +17,11 @@
 }
 
 /* VERSIÓN TABLETA */
-/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1023 pixeles  ejecuto el siguiente codigo */
+/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .headerContainer {
-        grid-template-areas: "logo hello" "logo nav ";
+        grid-template-areas: "logo hello" "logo nav";
     }
 
     .mainContainer {
@@ -29,8 +29,8 @@
     }
 
     .moralArticle {
-        max-width: auto;
-        margin-left: 30px;
+        width: auto;
+        // margin-left: 30px;
     }
 
     .pilars {
@@ -69,7 +69,6 @@
     }
 
     .intro {
-        background-repeat: no-repeat;
         margin-bottom: 0;
         height: auto;
 
@@ -85,12 +84,13 @@
     }
 
     .pilars {
-        width: 100px;
+        width: 140px;
         height: 240px;
         margin-left: 30%;
 
         img {
             height: 200px;
+            width: 100px;
         }
     }
 
@@ -104,20 +104,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: auto;
+        justify-content: space-evenly;
     }
 
     .askArticle {
         width: auto;
-        margin: 20px 50px 20px 50px;
+        // margin: 20px 50px 20px 50px;
         text-align: center;
     }
 
     .askAside {
-        width: auto;
+        width: 300px;
         height: auto;
         font-size: 10px;
-        margin: 20px 50px 50px 10px;
+        // margin: 20px 50px 50px 10px;
     }
 
     .form .fila {

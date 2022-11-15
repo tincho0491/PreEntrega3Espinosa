@@ -152,218 +152,218 @@ main {
     }
 }
 
-    /* Estilo para sección de formulario */
+/* Estilo para sección de formulario */
 
-    .ask {
-        grid-area: ask;
-        background-color: $c_section2;
-        display: flex;
-        justify-content: space-evenly;
-    }
+.ask {
+    grid-area: ask;
+    background-color: $c_section2;
+    display: flex;
+    justify-content: space-evenly;
+}
 
-    .askArticle {
-        font-size: 20px;
-        line-height: 40px;
-        width: 400px;
-        display: block;
-    }
+.askArticle {
+    font-size: 20px;
+    line-height: 40px;
+    width: 400px;
+    display: block;
+}
 
-    .askAside {
-        width: 600px;
-        height: 320px;
-        @include border-color(black);
-        border-radius: 4px;
+.askAside {
+    width: 600px;
+    height: 320px;
+    @include border-color(black);
+    border-radius: 4px;
+    padding: 4px;
+}
+
+/* FORMULARIOS */
+
+.fila {
+    display: flex;
+    flex-direction: row;
+}
+
+.columna1 {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    input {
+        font-size: 1rem;
         padding: 4px;
+        @include border-color(#350149);
+
+        /* Animación para formulario */
+        &:hover {
+            transition: all 3s;
+            height: 420px;
+            width: 250px;
+        }
+    }
+}
+
+.columna2 {
+    width: 300px;
+    height: 150px;
+    @include border-color(#350149);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1rem;
+    padding: 2px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+
+
+/* Estilo para botones de formulario */
+
+.botones {
+    @extend .rowCentered;
+    align-items: center;
+    margin-top: 5px;
+
+    input {
+        background-color: rgba(50, 50, 50, 0.2);
+        @include border-color(#350149);
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 10px;
+        padding: 4px;
+        cursor: pointer;
+    }
+}
+
+
+
+/*--------- Style for Sedes.html ---------- */
+
+.galery {
+    width: 80vw;
+    height: 80vh;
+    @extend .colCentered;
+
+}
+
+.schedule table {
+    width: 70vw;
+    border: 2px solid saddlebrown;
+}
+
+.location {
+    margin-top: 20px;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    margin-inline: 1rem;
+
+    div {
+        margin-top: 20px;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Styles for sobre-nosotros.html */
+
+.profesors .card {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.cronology .card {
+    background-color: #4291a7;
+    border: 2px solid black;
+}
+
+.ourHistory {
+    @extend .colCentered;
+
+    button {
+        background-color: $c_section1;
+    }
+}
+
+.ourTeam {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Styles for clases-reservas.html */
+
+.mainClases {
+    background-image: url(../images/chica-entrenando.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+
+    button {
+        color: white;
+    }
+}
+
+.reservation select {
+    width: 200px;
+    background-color: bisque;
+    margin-top: 10px;
+}
+
+.classDescription {
+    width: 560px;
+}
+
+/* ESTILOS HTML NOVEDADES */
+
+/* CAJAS Padre */
+
+.newsArticle {
+    padding: 3rem;
+    border-bottom: 2px dashed black;
+}
+
+/* ARTICULOS */
+
+.news {
+    @extend .rowCentered;
+    align-items: center;
+}
+
+.atrasAdelante {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    input {
+        background-color: #e76c6c;
+        border: 2px solid black;
+        font-weight: bold;
+        font-size: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding: 10px;
+    }
+}
+
+/* Styles for tienda.html */
+
+.products {
+    @extend .rowCentered;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .card {
+        margin: 20px;
+        position: relative;
+        z-index: 1;
     }
 
-    /* FORMULARIOS */
-
-    .fila {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .columna1 {
-        width: 250px;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
+    .card-body {
+        @extend .colCentered;
         justify-content: space-between;
 
-        input {
-            font-size: 1rem;
-            padding: 4px;
-            @include border-color(#350149);
-
-            /* Animación para formulario */
-            &:hover {
-                transition: all 3s;
-                height: 420px;
-                width: 250px;
-            }
-        }
     }
-
-    .columna2 {
-        width: 300px;
-        height: 150px;
-        @include border-color(#350149);
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 1rem;
-        padding: 2px;
-        margin-left: 30px;
-        margin-top: 20px;
-    }
-
-
-
-
-    /* Estilo para botones de formulario */
-
-    .botones {
-        @extend .rowCentered;
-        align-items: center;
-        margin-top: 5px;
-
-        input {
-            background-color: rgba(50, 50, 50, 0.2);
-            @include border-color(#350149);
-            font-weight: bold;
-            font-size: 1rem;
-            margin: 10px;
-            padding: 4px;
-            cursor: pointer;
-        }
-    }
-
-
-
-    /*--------- Style for Sedes.html ---------- */
-
-    .galery {
-        width: 80vw;
-        height: 80vh;
-        @extend .colCentered;
-
-    }
-
-    .schedule table {
-        width: 70vw;
-        border: 2px solid saddlebrown;
-    }
-
-    .location {
-        margin-top: 20px;
-        padding-bottom: 2rem;
-        display: flex;
-        align-items: center;
-        margin-inline: 1rem;
-
-        div {
-            margin-top: 20px;
-            margin-bottom: 2rem;
-        }
-    }
-
-    /* Styles for sobre-nosotros.html */
-
-    .profesors .card {
-        text-align: center;
-        background-color: black;
-        color: white;
-    }
-
-    .cronology .card {
-        background-color: #4291a7;
-        border: 2px solid black;
-    }
-
-    .ourHistory {
-        @extend .colCentered;
-
-        button {
-            background-color: $c_section1;
-        }
-    }
-
-    .ourTeam {
-        font-size: 20px;
-        text-align: center;
-    }
-
-    /* Styles for clases-reservas.html */
-
-    .mainClases {
-        background-image: url(../images/chica-entrenando.jpg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        color: white;
-
-        button {
-            color: white;
-        }
-    }
-
-    .reservation select {
-        width: 200px;
-        background-color: bisque;
-        margin-top: 10px;
-    }
-
-    .classDescription {
-        width: 560px;
-    }
-
-    /* ESTILOS HTML NOVEDADES */
-
-    /* CAJAS Padre */
-
-    .newsArticle {
-        padding: 3rem;
-        border-bottom: 2px dashed black;
-    }
-
-    /* ARTICULOS */
-
-    .news {
-        @extend .rowCentered;
-        align-items: center;
-    }
-
-    .atrasAdelante {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        padding: 2rem;
-
-        input {
-            background-color: #e76c6c;
-            border: 2px solid black;
-            font-weight: bold;
-            font-size: 100%;
-            margin-left: 2rem;
-            margin-right: 2rem;
-            padding: 10px;
-        }
-    }
-
-    /* Styles for tienda.html */
-
-    .products {
-        @extend .rowCentered;
-        align-items: center;
-        margin-left: 100px;
-        margin-right: 100px;
-
-        .card {
-            margin: 20px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .card-body {
-            @extend .colCentered;
-            justify-content: space-between;
-
-        }
-    }
+}
