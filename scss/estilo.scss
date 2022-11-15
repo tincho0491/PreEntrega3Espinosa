@@ -1,4 +1,4 @@
-@import "header", "footer", "structures", "variables", "mixins", "maps","transitions";
+@import "header", "footer", "structures", "variables", "mixins", "maps";
 
 
 /* Estilos MAIN */
@@ -100,18 +100,18 @@ main {
         display: flex;
         flex-direction: row;
         align-items: center;
-    
+
         .columna1 {
             width: 250px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-    
+
             input {
                 font-size: 1rem;
                 padding: 1px;
                 @include border-color(#350149);
-    
+
                 /* Animación para formulario */
                 &:hover {
                     transition: all 3s;
@@ -119,7 +119,7 @@ main {
                 }
             }
         }
-    
+
         .columna2 {
             width: 300px;
             height: 150px;
@@ -127,32 +127,32 @@ main {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 1rem;
             padding: 2px;
-    
+
             /*margin left*/
             @include margins(l, 2rem);
         }
     }
-    
-    
+
+
     /* Estilo para botones de formulario */
-    
+
     .botones {
         @extend .rowCentered;
         align-items: center;
         @include margins(t, 1rem);
-    
+
         input {
             background-color: rgba(50, 50, 50, 0.2);
             @include border-color(#2b023b);
             font-weight: bold;
             font-size: 1rem;
-            @include margins (all,10px);
+            @include margins (all, 10px);
             padding: 4px;
             cursor: pointer;
         }
     }
-    
-    
+
+
 }
 
 /*--------- Style for Sedes.html ---------- */
@@ -294,6 +294,7 @@ main {
 }
 
 
+
 /* ---------GRID------------ */
 
 /* VERSIÓN DE ESCRITORIO */
@@ -421,23 +422,23 @@ main {
         width: auto;
         height: auto;
         font-size: 10px;
-    
-    .form .fila {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
 
-        textarea {
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
+        .form .fila {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            textarea {
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+
+        .botones {
+            display: flex;
+            flex-direction: row;
         }
     }
-
-    .botones {
-        display: flex;
-        flex-direction: row;
-    }
-}
 
     /* sedes.html */
     .filiaries {
