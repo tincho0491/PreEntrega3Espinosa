@@ -1,81 +1,7 @@
-@import "header", "grid", "variables", "mixins";
+@import "header", "footer", "structures", "variables", "mixins", "maps";
 
-* {
-    border: 0;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* html {
-    font-size: 62.5%;
-} */
-
-/* Estilos generales */
-
-.colCentered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.rowCentered {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.paddingTb {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.marginLr {
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.marginTb {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.ml {
-    margin-left: 40px;
-}
-
-.mr {
-    margin-right: 40px;
-}
-
-
-/* Navbar Styles */
-
-/* FLEXBOX FOOTER */
-
-footer {
-    background-color: $c_footer;
-
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        li {
-            list-style-type: none;
-        }
-    }
-
-    p {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-bottom: 0;
-    }
-}
 
 /* Estilos MAIN */
-
 main {
     background-color: $c_section1;
 }
@@ -85,7 +11,7 @@ main {
     background-image: url(../images/young-fitness-man-in-studio.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 80vh;
     width: 100vw;
 
@@ -101,19 +27,11 @@ main {
     text-shadow: 2px 2px 2px black;
 
     div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @extend .colCentered;
     }
 
     h2 {
         font-size: 3rem;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
     }
 }
 
@@ -143,37 +61,33 @@ main {
     line-height: 25px;
     font-size: large;
 
-    a {
-        color: #93d3df;
-
-        &:visited {
-            color: #93d3df;
-        }
-    }
+    @include linkVisited;
 }
 
 /* Estilo para sección de formulario */
 
 .ask {
     grid-area: ask;
+    width: auto;
     background-color: $c_section2;
     display: flex;
     justify-content: space-evenly;
-}
 
-.askArticle {
-    font-size: 20px;
-    line-height: 40px;
-    width: 400px;
-    display: block;
-}
+    article {
+        font-size: 20px;
+        line-height: 40px;
+        width: 400px;
+        display: block;
+        @include linkVisited;
+    }
 
-.askAside {
-    width: 600px;
-    height: 320px;
-    @include border-color(black);
-    border-radius: 4px;
-    padding: 4px;
+    aside {
+        width: 600px;
+        height: 320px;
+        @include border-color(black);
+        border-radius: 4px;
+        padding: 4px;
+    }
 }
 
 /* FORMULARIOS */
@@ -181,41 +95,40 @@ main {
 .fila {
     display: flex;
     flex-direction: row;
-}
-
-.columna1 {
-    width: 250px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    input {
-        font-size: 1rem;
-        padding: 4px;
-        @include border-color(#350149);
-
-        /* Animación para formulario */
-        &:hover {
-            transition: all 3s;
-            height: 420px;
-            width: 250px;
+    
+    .columna1 {
+        width: 250px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        input {
+            font-size: 1rem;
+            padding: 4px;
+            @include border-color(#350149);
+    
+            /* Animación para formulario */
+            &:hover {
+                transition: all 3s;
+                height: 420px;
+                width: 250px;
+            }
         }
     }
+    
+    .columna2 {
+        width: 300px;
+        height: 150px;
+        @include border-color(#350149);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1rem;
+        padding: 2px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    
 }
-
-.columna2 {
-    width: 300px;
-    height: 150px;
-    @include border-color(#350149);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1rem;
-    padding: 2px;
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-
 
 
 /* Estilo para botones de formulario */
@@ -243,21 +156,26 @@ main {
 .galery {
     width: 80vw;
     height: 80vh;
-    @extend .colCentered;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
 
 }
 
-.schedule table {
-    width: 70vw;
-    border: 2px solid saddlebrown;
+.schedule {
+    background-color: $c_section2;
+
+    table {
+        width: 70vw;
+        @include border-color(#754848);
+    }
 }
 
 .location {
-    margin-top: 20px;
-    padding-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    margin-inline: 1rem;
+    background-color: $c_section3;
+    padding: 1rem 2rem 1rem 2rem;
+    width: auto;
 
     div {
         margin-top: 20px;
@@ -266,18 +184,6 @@ main {
 }
 
 /* Styles for sobre-nosotros.html */
-
-.profesors .card {
-    text-align: center;
-    background-color: black;
-    color: white;
-}
-
-.cronology .card {
-    background-color: #4291a7;
-    border: 2px solid black;
-}
-
 .ourHistory {
     @extend .colCentered;
 
@@ -286,9 +192,30 @@ main {
     }
 }
 
+.cronology .card {
+    background-color: $c_section3;
+    border: 2px solid black;
+}
+
 .ourTeam {
+    background-color: $c_section2;
     font-size: 20px;
     text-align: center;
+}
+
+.profesors {
+
+    background-color: $c_section2;
+
+    .card {
+        text-align: center;
+        background-color: #3d3546;
+        color: white;
+
+        img {
+            margin-top: 1rem;
+        }
+    }
 }
 
 /* Styles for clases-reservas.html */
@@ -314,26 +241,21 @@ main {
     width: 560px;
 }
 
-/* ESTILOS HTML NOVEDADES */
-
-/* CAJAS Padre */
+/* Styles for NOVEDADES */
 
 .newsArticle {
     padding: 3rem;
     border-bottom: 2px dashed black;
-}
 
-/* ARTICULOS */
-
-.news {
-    @extend .rowCentered;
-    align-items: center;
+    div {
+        @extend .rowCentered;
+        align-items: center;
+    }
 }
 
 .atrasAdelante {
     text-align: center;
-    display: flex;
-    justify-content: center;
+    @extend .rowCentered;
     padding: 2rem;
 
     input {
@@ -369,6 +291,24 @@ main {
 }
 
 
+/* ---------GRID------------ */
+
+/* VERSIÓN DE ESCRITORIO */
+
+/* GRID AREA HEADER */
+
+.headerContainer {
+    display: grid;
+    grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
+}
+
+/* GRID AREA MAIN de index.html */
+
+.mainContainer {
+    display: grid;
+    grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
+}
+
 /* VERSIÓN TABLETA */
 /* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
 
@@ -383,11 +323,13 @@ main {
 
     .moralArticle {
         width: auto;
-        // margin-left: 30px;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     .pilars {
         margin-left: 30%;
+        height: 400px;
     }
 
     .ask {
@@ -395,17 +337,22 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+
+        article {
+            width: auto;
+            margin: 20px 50px 20px 50px;
+            text-align: center;
+        }
+
+        aside {
+            margin: 20px 50px 50px 100px;
+        }
     }
 
-    .askArticle {
-        width: 90vw;
-        margin: 20px 50px 20px 50px;
-        text-align: center;
-    }
+    
 
-    .askAside {
-        margin: 20px 50px 50px 100px;
-    }
+    
 }
 
 /* VISTA MOVIL */
@@ -439,11 +386,11 @@ main {
     .pilars {
         width: 140px;
         height: 240px;
-        margin-left: 30%;
+        margin-left: 20%;
 
         img {
-            height: 200px;
             width: 100px;
+            height: 200px;
         }
     }
 
@@ -458,20 +405,21 @@ main {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+
+        article {
+            width: auto;
+            margin: 20px 50px 20px 50px;
+            text-align: center;
+        }
+
+        aside {
+            width: auto;
+            height: auto;
+            font-size: 10px;
+            // margin: 20px 50px 50px 10px;
+        }
     }
 
-    .askArticle {
-        width: auto;
-        // margin: 20px 50px 20px 50px;
-        text-align: center;
-    }
-
-    .askAside {
-        width: 300px;
-        height: auto;
-        font-size: 10px;
-        // margin: 20px 50px 50px 10px;
-    }
 
     .form .fila {
         display: flex;
@@ -491,7 +439,11 @@ main {
 
     /* sedes.html */
     .filiaries {
-        height: 300px;
+        .galery {
+            height: auto;
+        }
+
+        margin-bottom: 0;
     }
 
     .schedule {

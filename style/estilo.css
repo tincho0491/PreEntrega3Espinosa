@@ -18,20 +18,23 @@ header {
   animation-duration: 3s;
   animation-iteration-count: initial;
   grid-area: hello;
-  background: linear-gradient(to bottom, #485D63, #71B0BF);
+  background: linear-gradient(to bottom, #404258, #6B728E);
   margin: 0%;
 }
 
 .logo {
   grid-area: logo;
-  background: linear-gradient(to bottom, #71B0BF, #485D63);
+  background: linear-gradient(to bottom, #6B728E, #404258);
   z-index: 2;
   opacity: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation {
   grid-area: nav;
-  background: linear-gradient(to bottom, #71B0BF, #485D63);
+  background: linear-gradient(to bottom, #6B728E, #404258);
   padding-top: 5px;
   z-index: 2;
   opacity: 95%;
@@ -52,170 +55,6 @@ header {
   cursor: pointer;
 }
 
-/* ---------GRID------------ */
-/* VERSIÓN DE ESCRITORIO */
-/* GRID AREA HEADER */
-.headerContainer {
-  display: grid;
-  grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
-}
-
-/* GRID AREA MAIN de index.html */
-.mainContainer {
-  display: grid;
-  grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
-}
-
-/* VERSIÓN TABLETA */
-/* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
-@media (min-width: 768px) and (max-width: 1199px) {
-  .headerContainer {
-    grid-template-areas: "logo hello" "logo nav";
-  }
-  .mainContainer {
-    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
-  }
-  .moralArticle {
-    width: auto;
-  }
-  .pilars {
-    margin-left: 30%;
-  }
-  .ask {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .askArticle {
-    width: 90vw;
-    margin: 20px 50px 20px 50px;
-    text-align: center;
-  }
-  .askAside {
-    margin: 20px 50px 50px 100px;
-  }
-}
-/* VISTA MOVIL */
-@media (max-width: 767px) {
-  /* index.html */
-  .headerContainer {
-    grid-template-areas: "logo hello" "logo nav";
-  }
-  .mainContainer {
-    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
-  }
-  .intro {
-    margin-bottom: 0;
-    height: auto;
-  }
-  .intro div h2 {
-    margin-top: 10px;
-  }
-  .intro div * {
-    font-size: 20px;
-  }
-  .pilars {
-    width: 140px;
-    height: 240px;
-    margin-left: 30%;
-  }
-  .pilars img {
-    height: 200px;
-    width: 100px;
-  }
-  .moralArticle {
-    width: auto;
-    margin-left: 30px;
-    margin-top: 10px;
-  }
-  .ask {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .askArticle {
-    width: auto;
-    text-align: center;
-  }
-  .askAside {
-    width: 300px;
-    height: auto;
-    font-size: 10px;
-  }
-  .form .fila {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .form .fila textarea {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-  }
-  .botones {
-    display: flex;
-    flex-direction: row;
-  }
-  /* sedes.html */
-  .filiaries {
-    height: 300px;
-  }
-  .schedule {
-    font-size: 8px;
-  }
-  .schedule * {
-    margin: 0;
-    padding: 0;
-  }
-}
-* {
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* html {
-    font-size: 62.5%;
-} */
-/* Estilos generales */
-.colCentered, .products .card-body, .ourHistory, .galery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.rowCentered, .products, .news, .botones {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.paddingTb {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.marginLr {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.marginTb {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.ml {
-  margin-left: 40px;
-}
-
-.mr {
-  margin-right: 40px;
-}
-
-/* Navbar Styles */
 /* FLEXBOX FOOTER */
 footer {
   background-color: #6B728E;
@@ -235,6 +74,69 @@ footer p {
   margin-bottom: 0;
 }
 
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html {
+    font-size: 62.5%;
+} */
+/* Estilos generales */
+.colCentered, .products .card-body, .ourHistory, .intro div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rowCentered, .products, .atrasAdelante, .newsArticle div, .botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.paddingTb {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.marginLr {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.marginTb {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ml {
+  margin-left: 2rem;
+}
+
+.mr {
+  margin-right: 2rem;
+}
+
+/* MAP - GET */
+.news1 {
+  background-color: #474E68;
+}
+
+.news2 {
+  background-color: #595c75;
+}
+
+.news3 {
+  background-color: #605c75;
+}
+
+.news4 {
+  background-color: #55506b;
+}
+
 /* Estilos MAIN */
 main {
   background-color: #474E68;
@@ -245,7 +147,7 @@ main {
   background-image: url(../images/young-fitness-man-in-studio.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   height: 80vh;
   width: 100vw;
   display: flex;
@@ -258,18 +160,8 @@ main {
   font-weight: bold;
   text-shadow: 2px 2px 2px black;
 }
-.intro div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .intro h2 {
   font-size: 3rem;
-}
-.intro ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 /* Estilo a nuestros pilares */
@@ -307,19 +199,24 @@ main {
 /* Estilo para sección de formulario */
 .ask {
   grid-area: ask;
+  width: auto;
   background-color: #50577A;
   display: flex;
   justify-content: space-evenly;
 }
-
-.askArticle {
+.ask article {
   font-size: 20px;
   line-height: 40px;
   width: 400px;
   display: block;
 }
-
-.askAside {
+.ask article a {
+  color: #93d3df;
+}
+.ask article a:visited {
+  color: #93d3df;
+}
+.ask aside {
   width: 600px;
   height: 320px;
   border: 2px solid black;
@@ -332,27 +229,25 @@ main {
   display: flex;
   flex-direction: row;
 }
-
-.columna1 {
+.fila .columna1 {
   width: 250px;
   height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.columna1 input {
+.fila .columna1 input {
   font-size: 1rem;
   padding: 4px;
   border: 2px solid #350149;
   /* Animación para formulario */
 }
-.columna1 input:hover {
+.fila .columna1 input:hover {
   transition: all 3s;
   height: 420px;
   width: 250px;
 }
-
-.columna2 {
+.fila .columna2 {
   width: 300px;
   height: 150px;
   border: 2px solid #350149;
@@ -382,19 +277,23 @@ main {
 .galery {
   width: 80vw;
   height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
+.schedule {
+  background-color: #50577A;
+}
 .schedule table {
   width: 70vw;
-  border: 2px solid saddlebrown;
+  border: 2px solid #754848;
 }
 
 .location {
-  margin-top: 20px;
-  padding-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  margin-inline: 1rem;
+  background-color: #666a9b;
+  padding: 1rem 2rem 1rem 2rem;
+  width: auto;
 }
 .location div {
   margin-top: 20px;
@@ -402,24 +301,31 @@ main {
 }
 
 /* Styles for sobre-nosotros.html */
-.profesors .card {
-  text-align: center;
-  background-color: black;
-  color: white;
-}
-
-.cronology .card {
-  background-color: #4291a7;
-  border: 2px solid black;
-}
-
 .ourHistory button {
   background-color: #474E68;
 }
 
+.cronology .card {
+  background-color: #666a9b;
+  border: 2px solid black;
+}
+
 .ourTeam {
+  background-color: #50577A;
   font-size: 20px;
   text-align: center;
+}
+
+.profesors {
+  background-color: #50577A;
+}
+.profesors .card {
+  text-align: center;
+  background-color: #3d3546;
+  color: white;
+}
+.profesors .card img {
+  margin-top: 1rem;
 }
 
 /* Styles for clases-reservas.html */
@@ -443,22 +349,17 @@ main {
   width: 560px;
 }
 
-/* ESTILOS HTML NOVEDADES */
-/* CAJAS Padre */
+/* Styles for NOVEDADES */
 .newsArticle {
   padding: 3rem;
   border-bottom: 2px dashed black;
 }
-
-/* ARTICULOS */
-.news {
+.newsArticle div {
   align-items: center;
 }
 
 .atrasAdelante {
   text-align: center;
-  display: flex;
-  justify-content: center;
   padding: 2rem;
 }
 .atrasAdelante input {
@@ -486,6 +387,20 @@ main {
   justify-content: space-between;
 }
 
+/* ---------GRID------------ */
+/* VERSIÓN DE ESCRITORIO */
+/* GRID AREA HEADER */
+.headerContainer {
+  display: grid;
+  grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
+}
+
+/* GRID AREA MAIN de index.html */
+.mainContainer {
+  display: grid;
+  grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
+}
+
 /* VERSIÓN TABLETA */
 /* Si la pantalla tienen un mínimo de 700 pixeles y máximo de 1199 pixeles  ejecuto el siguiente codigo */
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -497,22 +412,26 @@ main {
   }
   .moralArticle {
     width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .pilars {
     margin-left: 30%;
+    height: 400px;
   }
   .ask {
     width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
   }
-  .askArticle {
-    width: 90vw;
+  .ask article {
+    width: auto;
     margin: 20px 50px 20px 50px;
     text-align: center;
   }
-  .askAside {
+  .ask aside {
     margin: 20px 50px 50px 100px;
   }
 }
@@ -538,11 +457,11 @@ main {
   .pilars {
     width: 140px;
     height: 240px;
-    margin-left: 30%;
+    margin-left: 20%;
   }
   .pilars img {
-    height: 200px;
     width: 100px;
+    height: 200px;
   }
   .moralArticle {
     width: auto;
@@ -555,12 +474,13 @@ main {
     align-items: center;
     justify-content: space-evenly;
   }
-  .askArticle {
+  .ask article {
     width: auto;
+    margin: 20px 50px 20px 50px;
     text-align: center;
   }
-  .askAside {
-    width: 300px;
+  .ask aside {
+    width: auto;
     height: auto;
     font-size: 10px;
   }
@@ -579,7 +499,10 @@ main {
   }
   /* sedes.html */
   .filiaries {
-    height: 300px;
+    margin-bottom: 0;
+  }
+  .filiaries .galery {
+    height: auto;
   }
   .schedule {
     font-size: 8px;
