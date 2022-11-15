@@ -52,7 +52,7 @@ header {
   cursor: pointer;
 }
 
-/* ---------GRID index.html------------ */
+/* ---------GRID------------ */
 /* VERSIÓN DE ESCRITORIO */
 /* GRID AREA HEADER */
 .headerContainer {
@@ -60,7 +60,7 @@ header {
   grid-template-areas: "logo hello hello hello hello" "logo nav nav nav nav";
 }
 
-/* GRID AREA MAIN */
+/* GRID AREA MAIN de index.html */
 .mainContainer {
   display: grid;
   grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
@@ -183,7 +183,7 @@ header {
     font-size: 62.5%;
 } */
 /* Estilos generales */
-.centered {
+.centered, .products .card-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -216,7 +216,7 @@ header {
 /* Navbar Styles */
 /* FLEXBOX FOOTER */
 footer {
-  background-color: rgba(107, 91, 64, 0.8784313725);
+  background-color: #6B728E;
 }
 footer ul {
   display: flex;
@@ -235,7 +235,7 @@ footer p {
 
 /* Estilos MAIN */
 main {
-  background-color: #485D63;
+  background-color: #474E68;
 }
 
 .intro {
@@ -299,6 +299,7 @@ main {
 /* Estilo para sección de formulario */
 .ask {
   grid-area: ask;
+  background-color: #50577A;
   display: flex;
   justify-content: space-evenly;
 }
@@ -488,10 +489,7 @@ main {
   z-index: 1;
 }
 .products .card-body {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 /*# sourceMappingURL=estilo.css.map */

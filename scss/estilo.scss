@@ -1,4 +1,4 @@
-@import "header","grid";
+@import "header","grid","variables";
 
 * {
     border: 0;
@@ -49,7 +49,7 @@
 /* FLEXBOX FOOTER */
 
 footer {
-    background-color: #6b5b40e0;
+    background-color: $c_footer;
 
     ul {
         display: flex;
@@ -72,7 +72,7 @@ footer {
 /* Estilos MAIN */
 
 main {
-    background-color: #485D63;
+    background-color: $c_section1;
 }
 
 .intro {
@@ -143,6 +143,7 @@ main {
 
 .ask {
     grid-area: ask;
+    background-color: $c_section2;
     display: flex;
     justify-content: space-evenly;
 }
@@ -229,7 +230,6 @@ main {
 .galery {
     width: 80vw;
     height: 80vh;
-    //centrar img
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -355,9 +355,8 @@ main {
     }
 
     .card-body {
-        display: flex;
-        flex-direction: column;
+        @extend .centered;
         justify-content: space-between;
-        align-items: center;
+        
     }
 }
