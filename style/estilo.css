@@ -183,10 +183,15 @@ header {
     font-size: 62.5%;
 } */
 /* Estilos generales */
-.centered, .products .card-body {
+.colCentered, .products .card-body, .ourHistory, .galery {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.rowCentered, .products, .news, .botones {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -295,6 +300,12 @@ main {
   line-height: 25px;
   font-size: large;
 }
+.moralArticle a {
+  color: #93d3df;
+}
+.moralArticle a:visited {
+  color: #93d3df;
+}
 
 /* Estilo para sección de formulario */
 .ask {
@@ -314,7 +325,7 @@ main {
 .askAside {
   width: 600px;
   height: 320px;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 4px;
   padding: 4px;
 }
@@ -335,19 +346,19 @@ main {
 .columna1 input {
   font-size: 1rem;
   padding: 4px;
-  border: 1px solid #cf6262;
+  border: 2px solid #350149;
   /* Animación para formulario */
 }
 .columna1 input:hover {
   transition: all 3s;
-  height: 320px;
+  height: 420px;
   width: 250px;
 }
 
 .columna2 {
   width: 300px;
   height: 150px;
-  border: 1px solid #cf6262;
+  border: 2px solid #350149;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1rem;
   padding: 2px;
@@ -357,14 +368,12 @@ main {
 
 /* Estilo para botones de formulario */
 .botones {
-  display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 5px;
 }
 .botones input {
   background-color: rgba(50, 50, 50, 0.2);
-  border: 1px solid brown;
+  border: 2px solid #350149;
   font-weight: bold;
   font-size: 1rem;
   margin: 10px;
@@ -376,9 +385,6 @@ main {
 .galery {
   width: 80vw;
   height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .schedule table {
@@ -410,13 +416,8 @@ main {
   border: 2px solid black;
 }
 
-.ourHistory {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .ourHistory button {
-  background-color: #485D63;
+  background-color: #474E68;
 }
 
 .ourTeam {
@@ -454,9 +455,7 @@ main {
 
 /* ARTICULOS */
 .news {
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .atrasAdelante {
@@ -477,8 +476,6 @@ main {
 
 /* Styles for tienda.html */
 .products {
-  display: flex;
-  justify-content: center;
   align-items: center;
   margin-left: 100px;
   margin-right: 100px;
