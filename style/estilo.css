@@ -123,6 +123,9 @@ main {
   background-image: url(../images/young-fitness-man-in-studio.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -168,35 +171,31 @@ main {
 
 .moralArticle {
   grid-area: moralAr;
+  width: 800px;
   line-height: 25px;
   font-size: large;
 }
 
 /* Estilo para sección de formulario */
 .ask {
+  grid-area: ask;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .askArticle {
-  grid-area: askAr;
   font-size: 20px;
   line-height: 40px;
   width: 400px;
   display: block;
-  margin-left: 100px;
-  margin-bottom: 50px;
-  margin-right: 100px;
 }
 
 .askAside {
-  grid-area: askAs;
   width: 600px;
   height: 320px;
   border: 1px solid black;
   border-radius: 4px;
   padding: 4px;
-  margin-left: -5px;
 }
 
 /* FORMULARIOS */
@@ -264,7 +263,7 @@ main {
 /* GRID AREA MAIN */
 .mainContainer {
   display: grid;
-  grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "askAr askAr askAs askAs";
+  grid-template-areas: "intro intro intro intro" "pilar1 moralAr moralAr pilar2" "ask ask ask ask";
 }
 
 /* VERSIÓN TABLETA */
@@ -274,11 +273,20 @@ main {
     grid-template-areas: "logo hello" "logo nav ";
   }
   .mainContainer {
-    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "askAr askAr" "askAs askAs";
+    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
   }
   .moralArticle {
-    max-width: 90%;
+    max-width: auto;
     margin-left: 30px;
+  }
+  .pilars {
+    margin-left: 30%;
+  }
+  .ask {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .askArticle {
     width: 90vw;
@@ -296,7 +304,7 @@ main {
     grid-template-areas: "logo hello" "logo nav";
   }
   .mainContainer {
-    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "askAr askAr" "askAs askAs";
+    grid-template-areas: "intro intro" "pilar1 pilar2" "moralAr moralAr" "ask ask";
   }
   .intro {
     background-repeat: no-repeat;
@@ -311,11 +319,22 @@ main {
   }
   .pilars {
     width: 100px;
+    height: 240px;
     margin-left: 30%;
   }
+  .pilars img {
+    height: 200px;
+  }
   .moralArticle {
-    max-width: 90%;
+    width: auto;
     margin-left: 30px;
+    margin-top: 10px;
+  }
+  .ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
   }
   .askArticle {
     width: auto;
@@ -333,14 +352,17 @@ main {
     flex-direction: column;
     align-items: center;
   }
+  .form .fila textarea {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
   .botones {
     display: flex;
     flex-direction: row;
   }
   /* sedes.html */
-  .galery {
-    width: 100vh;
-    height: auto;
+  .filiaries {
+    height: 300px;
   }
   .schedule {
     font-size: 8px;
@@ -352,7 +374,11 @@ main {
 }
 /*--------- Style for Sedes.html ---------- */
 .galery {
-  width: 60vw;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .schedule table {
