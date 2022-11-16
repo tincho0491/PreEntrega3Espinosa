@@ -312,6 +312,10 @@ main {
 }
 
 /* Styles for sobre-nosotros.html */
+.ourHistory button {
+  background-color: #474E68;
+}
+
 .cronology .card {
   background-color: #666a9b;
   border: 2px solid black;

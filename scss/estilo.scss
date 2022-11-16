@@ -188,6 +188,9 @@ main {
 /* Styles for sobre-nosotros.html */
 .ourHistory {
     @extend .colCentered;
+    button {
+        background-color: $c_section1;
+    }
 }
 
 .cronology .card {
