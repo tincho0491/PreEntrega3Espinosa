@@ -123,13 +123,11 @@ main {
         .columna2 {
             width: 300px;
             height: 150px;
-            @include border-color(#350149);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            @include border-color(#350149);
+            @include margins(l, 2rem);
             font-size: 1rem;
             padding: 2px;
-
-            /*margin left*/
-            @include margins(l, 2rem);
         }
     }
 
@@ -144,10 +142,10 @@ main {
         input {
             background-color: rgba(50, 50, 50, 0.2);
             @include border-color(#2b023b);
-            font-weight: bold;
-            font-size: 1rem;
             @include margins (all, 10px);
+            font-size: 1rem;
             padding: 4px;
+            font-weight: bold;
             cursor: pointer;
         }
     }
@@ -190,10 +188,6 @@ main {
 /* Styles for sobre-nosotros.html */
 .ourHistory {
     @extend .colCentered;
-
-    button {
-        background-color: $c_section1;
-    }
 }
 
 .cronology .card {
@@ -264,7 +258,7 @@ main {
 
     input {
         background-color: #e76c6c;
-        border: 2px solid black;
+        @include border-color(black);
         font-weight: bold;
         font-size: 100%;
         @include margins(lr, 2rem);
@@ -277,13 +271,16 @@ main {
 .products {
     @extend .rowCentered;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    justify-content: space-evenly;
 
     .card {
         margin: 20px;
-        position: relative;
-        z-index: 1;
+        z-index: 3;
+        background-color: $c_section3;
+        img {
+            margin-top: 1rem;
+            height: 270px;
+        }
     }
 
     .card-body {
@@ -327,8 +324,7 @@ main {
 
     .moralArticle {
         width: auto;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        @include margins(lr, 2rem);
     }
 
     .pilars {

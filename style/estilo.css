@@ -97,11 +97,6 @@ footer p {
   justify-content: center;
 }
 
-.paddingTb {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .marginLr {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -134,6 +129,22 @@ footer p {
 }
 
 .news4 {
+  background-color: #55506b;
+}
+
+.btn--arriba {
+  background-color: #474E68;
+}
+
+.btn--abajo {
+  background-color: #595c75;
+}
+
+.btn--izquierda {
+  background-color: #605c75;
+}
+
+.btn--derecha {
   background-color: #55506b;
 }
 
@@ -253,12 +264,11 @@ main {
 .askAside .fila .columna2 {
   width: 300px;
   height: 150px;
-  border: 2px solid #350149;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 2px solid #350149;
+  margin-left: 2rem;
   font-size: 1rem;
   padding: 2px;
-  /*margin left*/
-  margin-left: 2rem;
 }
 .askAside .botones {
   align-items: center;
@@ -267,10 +277,10 @@ main {
 .askAside .botones input {
   background-color: rgba(50, 50, 50, 0.2);
   border: 2px solid #2b023b;
-  font-weight: bold;
-  font-size: 1rem;
   margin: 10px;
+  font-size: 1rem;
   padding: 4px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -302,10 +312,6 @@ main {
 }
 
 /* Styles for sobre-nosotros.html */
-.ourHistory button {
-  background-color: #474E68;
-}
-
 .cronology .card {
   background-color: #666a9b;
   border: 2px solid black;
@@ -376,13 +382,16 @@ main {
 /* Styles for tienda.html */
 .products {
   align-items: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  justify-content: space-evenly;
 }
 .products .card {
   margin: 20px;
-  position: relative;
-  z-index: 1;
+  z-index: 3;
+  background-color: #666a9b;
+}
+.products .card img {
+  margin-top: 1rem;
+  height: 270px;
 }
 .products .card-body {
   justify-content: space-between;
